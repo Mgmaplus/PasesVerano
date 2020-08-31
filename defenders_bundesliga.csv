@@ -1,0 +1,441 @@
+,№,Season,Team,Apps,Min,G,A,Sh90,KP90,xG,xA,xG90,xA90,Player,League,Pos
+0,1.0,2019/2020,Augsburg,18,1170,0,2,0.08,0.38,0.10+0.10,0.85-1.15,0.01,0.07,Raphael Framberger,Bundesliga,D
+1,2.0,2018/2019,Augsburg,7,547,0,0,0.0,1.15,0.00,1.50+1.50,0.0,0.25,Raphael Framberger,Bundesliga,D
+2,3.0,2017/2018,Augsburg,9,700,0,0,0.13,1.16,0.03+0.03,1.10+1.10,0.0,0.14,Raphael Framberger,Bundesliga,D
+3,4.0,2016/2017,Augsburg,3,144,0,1,0.0,1.25,0.00,0.63-0.37,0.0,0.39,Raphael Framberger,Bundesliga,D
+4,,,,37,2561,0,3,0.07,0.81,0.13+0.13,4.07+1.07,0.0,0.14,Raphael Framberger,Bundesliga,D
+0,1.0,2019/2020,FC Cologne,18,1159,0,0,0.16,1.16,0.09+0.09,1.04+1.04,0.01,0.08,Benno Schmitz,Bundesliga,D
+1,2.0,2017/2018,RasenBallsport Leipzig,2,82,0,0,0.0,2.2,0.00,0.08+0.08,0.0,0.08,Benno Schmitz,Bundesliga,D
+2,3.0,2016/2017,RasenBallsport Leipzig,16,991,0,2,0.91,0.73,0.41+0.41,1.71-0.29,0.04,0.16,Benno Schmitz,Bundesliga,D
+3,,,,36,2232,0,2,0.48,1.01,0.51+0.51,2.82+0.82,0.02,0.11,Benno Schmitz,Bundesliga,D
+0,1.0,2019/2020,Hoffenheim,21,1175,2,0,0.54,0.15,0.41-1.59,0.08+0.08,0.03,0.01,Ermin Bicakcic,Bundesliga,D
+1,2.0,2018/2019,Hoffenheim,25,1783,1,2,0.45,0.25,2.25+1.25,0.71-1.29,0.11,0.04,Ermin Bicakcic,Bundesliga,D
+2,3.0,2017/2018,Hoffenheim,9,548,0,0,0.16,0.16,0.02+0.02,0.05+0.05,0.0,0.01,Ermin Bicakcic,Bundesliga,D
+3,4.0,2016/2017,Hoffenheim,18,1051,1,0,0.77,0.51,1.04+0.04,0.29+0.29,0.09,0.02,Ermin Bicakcic,Bundesliga,D
+4,5.0,2015/2016,Hoffenheim,21,1600,0,0,0.45,0.17,1.29+1.29,0.11+0.11,0.07,0.01,Ermin Bicakcic,Bundesliga,D
+5,6.0,2014/2015,Hoffenheim,24,2072,1,0,0.39,0.22,1.93+0.93,0.30+0.30,0.08,0.01,Ermin Bicakcic,Bundesliga,D
+6,,,,118,8229,5,2,0.47,0.24,6.92+1.92,1.54-0.46,0.08,0.02,Ermin Bicakcic,Bundesliga,D
+0,1.0,2019/2020,Bayer Leverkusen,14,1058,0,0,0.26,0.09,0.20+0.20,0.09+0.09,0.02,0.01,Edmond Tapsoba,Bundesliga,D
+1,,,,14,1058,0,0,0.26,0.09,0.20+0.20,0.09+0.09,0.02,0.01,Edmond Tapsoba,Bundesliga,D
+0,1.0,2019/2020,Bayer Leverkusen,18,1377,2,1,0.92,1.18,0.78-1.22,1.30+0.30,0.05,0.09,Lars Bender,Bundesliga,D
+1,2.0,2018/2019,Bayer Leverkusen,20,1371,1,4,0.98,0.92,0.85-0.15,1.38-2.62,0.06,0.09,Lars Bender,Bundesliga,D
+2,3.0,2017/2018,Bayer Leverkusen,21,1611,2,4,1.12,1.12,1.31-0.69,2.12-1.88,0.07,0.12,Lars Bender,Bundesliga,D
+3,4.0,2016/2017,Bayer Leverkusen,9,617,0,1,0.73,1.02,0.13+0.13,1.78+0.78,0.02,0.26,Lars Bender,Bundesliga,D
+4,5.0,2015/2016,Bayer Leverkusen,11,890,1,1,1.11,0.81,1.18+0.18,0.81-0.19,0.12,0.08,Lars Bender,Bundesliga,D
+5,6.0,2014/2015,Bayer Leverkusen,26,2038,1,3,0.97,0.84,1.44+0.44,2.18-0.82,0.06,0.1,Lars Bender,Bundesliga,D
+6,,,,105,7904,7,14,0.99,0.98,5.69-1.31,9.57-4.43,0.06,0.11,Lars Bender,Bundesliga,D
+0,1.0,2019/2020,Paderborn,16,1200,1,0,0.9,0.45,1.41+0.41,0.22+0.22,0.11,0.02,Uwe Hünemeier,Bundesliga,D
+1,2.0,2017/2018,Brighton,1,16,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Uwe Hünemeier,Bundesliga,D
+2,3.0,2014/2015,Paderborn,32,2816,2,2,0.96,0.29,1.87-0.13,1.22-0.78,0.06,0.04,Uwe Hünemeier,Bundesliga,D
+3,,,,49,4032,3,2,0.94,0.33,3.28+0.28,1.45-0.55,0.07,0.03,Uwe Hünemeier,Bundesliga,D
+0,1.0,2019/2020,Mainz 05,26,1694,2,4,1.22,2.92,2.15+0.15,5.69+1.69,0.11,0.3,Daniel Brosinski,Bundesliga,D
+1,2.0,2018/2019,Mainz 05,26,2208,3,5,0.73,1.71,2.92-0.08,4.08-0.92,0.12,0.17,Daniel Brosinski,Bundesliga,D
+2,3.0,2017/2018,Mainz 05,29,2504,1,5,1.15,1.55,1.66+0.66,3.09-1.91,0.06,0.11,Daniel Brosinski,Bundesliga,D
+3,4.0,2016/2017,Mainz 05,29,2453,1,2,1.25,1.1,1.56+0.56,2.36+0.36,0.06,0.09,Daniel Brosinski,Bundesliga,D
+4,5.0,2015/2016,Mainz 05,30,2237,1,3,0.56,0.97,0.64-0.36,2.29-0.71,0.03,0.09,Daniel Brosinski,Bundesliga,D
+5,6.0,2014/2015,Mainz 05,32,2776,0,3,0.68,0.62,1.38+1.38,2.11-0.89,0.04,0.07,Daniel Brosinski,Bundesliga,D
+6,,,,172,13872,8,22,0.92,1.38,10.31+2.31,19.61-2.39,0.07,0.13,Daniel Brosinski,Bundesliga,D
+0,1.0,2019/2020,Freiburg,33,2840,5,1,1.36,0.86,3.00-2.00,2.66+1.66,0.09,0.08,Jonathan Schmid,Bundesliga,D
+1,2.0,2018/2019,Augsburg,28,2520,3,7,0.61,1.57,0.65-2.35,3.52-3.48,0.02,0.13,Jonathan Schmid,Bundesliga,D
+2,3.0,2017/2018,Augsburg,25,1464,0,0,1.41,1.72,1.50+1.50,1.88+1.88,0.09,0.12,Jonathan Schmid,Bundesliga,D
+3,4.0,2016/2017,Augsburg,25,1713,1,3,1.26,1.1,1.63+0.63,1.62-1.38,0.09,0.09,Jonathan Schmid,Bundesliga,D
+4,5.0,2015/2016,Hoffenheim,23,1455,4,0,1.24,1.48,3.16-0.84,2.12+2.12,0.2,0.13,Jonathan Schmid,Bundesliga,D
+5,6.0,2014/2015,Freiburg,33,2826,4,8,1.91,2.04,5.15+1.15,6.22-1.78,0.16,0.2,Jonathan Schmid,Bundesliga,D
+6,,,,167,12818,17,19,1.31,1.46,15.09-1.91,18.02-0.98,0.11,0.13,Jonathan Schmid,Bundesliga,D
+0,1.0,2019/2020,Paderborn,18,1462,1,3,0.86,0.92,0.76-0.24,1.11-1.89,0.05,0.07,Mohamed Dräger,Bundesliga,D
+1,2.0,2017/2018,Freiburg,2,50,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Mohamed Dräger,Bundesliga,D
+2,,,,20,1512,1,3,0.83,0.89,0.76-0.24,1.11-1.89,0.05,0.07,Mohamed Dräger,Bundesliga,D
+0,1.0,2019/2020,Wolfsburg,15,1210,1,1,0.6,0.3,0.85-0.15,0.33-0.67,0.06,0.02,Marcel Tisserand,Bundesliga,D
+1,2.0,2018/2019,Wolfsburg,10,892,1,0,1.01,0.1,1.41+0.41,0.06+0.06,0.14,0.01,Marcel Tisserand,Bundesliga,D
+2,3.0,2017/2018,Wolfsburg,16,1250,0,1,0.43,0.14,0.20+0.20,0.10-0.90,0.01,0.01,Marcel Tisserand,Bundesliga,D
+3,4.0,2016/2017,Ingolstadt,28,2390,0,1,0.6,0.19,1.72+1.72,0.52-0.48,0.06,0.02,Marcel Tisserand,Bundesliga,D
+4,5.0,2016/2017,Monaco,1,90,0,0,1.0,0.0,0.10+0.10,0.00,0.1,0.0,Marcel Tisserand,Bundesliga,D
+5,6.0,2015/2016,Toulouse,33,2846,1,0,0.32,0.44,1.13+0.13,0.92+0.92,0.04,0.03,Marcel Tisserand,Bundesliga,D
+6,7.0,2014/2015,Toulouse,21,1419,0,1,0.76,0.51,0.54+0.54,0.64-0.36,0.03,0.04,Marcel Tisserand,Bundesliga,D
+7,,,,124,10097,3,4,0.56,0.3,5.95+2.95,2.57-1.43,0.05,0.02,Marcel Tisserand,Bundesliga,D
+0,1.0,2019/2020,RasenBallsport Leipzig,25,1795,3,1,1.1,0.7,2.81-0.19,1.56+0.56,0.14,0.08,Nordi Mukiele,Bundesliga,D
+1,2.0,2018/2019,RasenBallsport Leipzig,19,1231,1,1,0.58,0.8,0.61-0.39,1.67+0.67,0.04,0.12,Nordi Mukiele,Bundesliga,D
+2,3.0,2017/2018,Montpellier,33,2790,0,1,0.61,1.13,1.31+1.31,2.51+1.51,0.04,0.08,Nordi Mukiele,Bundesliga,D
+3,4.0,2016/2017,Montpellier,17,1446,0,0,0.56,0.93,0.47+0.47,1.34+1.34,0.03,0.08,Nordi Mukiele,Bundesliga,D
+4,,,,94,7262,4,3,0.72,0.93,5.20+1.20,7.07+4.07,0.06,0.09,Nordi Mukiele,Bundesliga,D
+0,1.0,2019/2020,FC Cologne,18,1319,0,0,0.2,0.61,0.10+0.10,0.25+0.25,0.01,0.02,Noah Katterbach,Bundesliga,D
+1,,,,18,1319,0,0,0.2,0.61,0.10+0.10,0.25+0.25,0.01,0.02,Noah Katterbach,Bundesliga,D
+0,1.0,2019/2020,Hertha Berlin,17,1400,0,5,0.26,1.67,0.34+0.34,2.78-2.22,0.02,0.18,Marvin Plattenhardt,Bundesliga,D
+1,2.0,2018/2019,Hertha Berlin,22,1928,1,2,0.51,1.49,0.70-0.30,2.65+0.65,0.03,0.12,Marvin Plattenhardt,Bundesliga,D
+2,3.0,2017/2018,Hertha Berlin,33,2970,0,7,0.55,1.0,0.88+0.88,3.43-3.57,0.03,0.1,Marvin Plattenhardt,Bundesliga,D
+3,4.0,2016/2017,Hertha Berlin,27,2430,3,3,0.89,1.33,1.26-1.74,4.42+1.42,0.05,0.16,Marvin Plattenhardt,Bundesliga,D
+4,5.0,2015/2016,Hertha Berlin,33,2970,2,4,0.39,1.12,0.69-1.31,4.29+0.29,0.02,0.13,Marvin Plattenhardt,Bundesliga,D
+5,6.0,2014/2015,Hertha Berlin,15,1282,0,1,0.21,0.84,0.19+0.19,0.64-0.36,0.01,0.04,Marvin Plattenhardt,Bundesliga,D
+6,,,,147,12980,6,22,0.51,1.22,4.07-1.93,18.21-3.79,0.03,0.13,Marvin Plattenhardt,Bundesliga,D
+0,1.0,2019/2020,Borussia M.Gladbach,25,1674,2,2,0.48,1.18,1.13-0.87,2.60+0.60,0.06,0.14,Oscar Wendt,Bundesliga,D
+1,2.0,2018/2019,Borussia M.Gladbach,32,2730,1,1,0.26,0.82,0.48-0.52,2.35+1.35,0.02,0.08,Oscar Wendt,Bundesliga,D
+2,3.0,2017/2018,Borussia M.Gladbach,28,2467,1,1,0.66,0.88,1.68+0.68,2.08+1.08,0.06,0.08,Oscar Wendt,Bundesliga,D
+3,4.0,2016/2017,Borussia M.Gladbach,28,2463,2,2,0.95,0.95,2.27+0.27,2.71+0.71,0.08,0.1,Oscar Wendt,Bundesliga,D
+4,5.0,2015/2016,Borussia M.Gladbach,30,2637,3,2,0.68,0.96,1.51-1.49,2.76+0.76,0.05,0.09,Oscar Wendt,Bundesliga,D
+5,6.0,2014/2015,Borussia M.Gladbach,26,2294,2,1,0.31,0.47,0.68-1.32,0.98-0.02,0.03,0.04,Oscar Wendt,Bundesliga,D
+6,,,,169,14265,11,9,0.56,0.86,7.75-3.25,13.47+4.47,0.05,0.08,Oscar Wendt,Bundesliga,D
+0,1.0,2019/2020,Paderborn,15,1263,0,0,0.07,0.14,0.04+0.04,0.19+0.19,0.0,0.01,Luca Kilian,Bundesliga,D
+1,,,,15,1263,0,0,0.07,0.14,0.04+0.04,0.19+0.19,0.0,0.01,Luca Kilian,Bundesliga,D
+0,1.0,2019/2020,Hertha Berlin,14,1260,1,0,0.36,0.21,0.52-0.48,0.65+0.65,0.04,0.05,Karim Rekik,Bundesliga,D
+1,2.0,2018/2019,Hertha Berlin,24,2069,0,0,0.3,0.09,0.67+0.67,0.10+0.10,0.03,0.0,Karim Rekik,Bundesliga,D
+2,3.0,2017/2018,Hertha Berlin,26,2306,2,2,0.27,0.08,0.21-1.79,1.02-0.98,0.01,0.04,Karim Rekik,Bundesliga,D
+3,4.0,2016/2017,Marseille,10,763,0,0,0.24,0.47,0.29+0.29,0.25+0.25,0.03,0.03,Karim Rekik,Bundesliga,D
+4,5.0,2015/2016,Marseille,24,2035,1,1,0.27,0.22,0.51-0.49,1.10+0.10,0.02,0.05,Karim Rekik,Bundesliga,D
+5,,,,98,8433,4,3,0.29,0.17,2.19-1.81,3.12+0.12,0.02,0.03,Karim Rekik,Bundesliga,D
+0,1.0,2019/2020,Augsburg,20,1357,0,1,0.13,0.53,0.03+0.03,0.54-0.46,0.0,0.04,Stephan Lichtsteiner,Bundesliga,D
+1,2.0,2018/2019,Arsenal,14,953,0,0,0.09,0.28,0.02+0.02,0.09+0.09,0.0,0.01,Stephan Lichtsteiner,Bundesliga,D
+2,3.0,2017/2018,Juventus,27,1730,0,2,0.21,0.42,0.82+0.82,0.78-1.22,0.04,0.04,Stephan Lichtsteiner,Bundesliga,D
+3,4.0,2016/2017,Juventus,26,1874,1,2,0.29,0.82,1.43+0.43,2.53+0.53,0.07,0.12,Stephan Lichtsteiner,Bundesliga,D
+4,5.0,2015/2016,Juventus,26,1841,0,1,0.78,0.88,1.21+1.21,2.79+1.79,0.06,0.14,Stephan Lichtsteiner,Bundesliga,D
+5,6.0,2014/2015,Juventus,32,2448,3,5,0.77,0.88,2.08-0.92,3.66-1.34,0.08,0.13,Stephan Lichtsteiner,Bundesliga,D
+6,,,,145,10203,4,11,0.44,0.69,5.58+1.58,10.38-0.62,0.05,0.09,Stephan Lichtsteiner,Bundesliga,D
+0,1.0,2019/2020,Eintracht Frankfurt,19,1500,1,3,0.9,1.32,1.84+0.84,2.68-0.32,0.11,0.16,Almamy Touré,Bundesliga,D
+1,2.0,2018/2019,Eintracht Frankfurt,7,524,0,0,0.34,0.17,0.15+0.15,0.02+0.02,0.03,0.0,Almamy Touré,Bundesliga,D
+2,3.0,2018/2019,Monaco,4,348,0,0,0.52,0.52,0.05+0.05,0.07+0.07,0.01,0.02,Almamy Touré,Bundesliga,D
+3,4.0,2017/2018,Monaco,20,1237,1,6,0.51,1.16,0.27-0.73,2.58-3.42,0.02,0.19,Almamy Touré,Bundesliga,D
+4,5.0,2016/2017,Monaco,15,1077,0,5,0.5,1.34,0.71+0.71,3.08-1.92,0.06,0.26,Almamy Touré,Bundesliga,D
+5,6.0,2015/2016,Monaco,10,756,3,2,1.19,0.83,1.99-1.01,0.78-1.22,0.24,0.09,Almamy Touré,Bundesliga,D
+6,7.0,2014/2015,Monaco,5,378,1,0,0.48,0.48,0.17-0.83,0.05+0.05,0.04,0.01,Almamy Touré,Bundesliga,D
+7,,,,80,5820,6,16,0.68,1.02,5.18-0.82,9.26-6.74,0.08,0.14,Almamy Touré,Bundesliga,D
+0,1.0,2019/2020,Freiburg,17,1378,1,0,0.91,0.33,1.13+0.13,0.16+0.16,0.07,0.01,Manuel Gulde,Bundesliga,D
+1,2.0,2018/2019,Freiburg,21,1714,1,0,0.32,0.16,0.60-0.40,0.12+0.12,0.03,0.01,Manuel Gulde,Bundesliga,D
+2,3.0,2017/2018,Freiburg,17,1530,1,0,0.53,0.06,1.15+0.15,0.03+0.03,0.07,0.0,Manuel Gulde,Bundesliga,D
+3,4.0,2016/2017,Freiburg,20,1688,0,0,0.11,0.05,0.15+0.15,0.04+0.04,0.01,0.0,Manuel Gulde,Bundesliga,D
+4,,,,75,6310,3,0,0.44,0.14,3.04+0.04,0.34+0.34,0.04,0.0,Manuel Gulde,Bundesliga,D
+0,1.0,2019/2020,Wolfsburg,29,2376,1,1,0.72,0.91,1.06+0.06,3.04+2.04,0.04,0.12,Jérôme Roussillon,Bundesliga,D
+1,2.0,2018/2019,Wolfsburg,28,2475,3,4,0.73,1.09,1.74-1.26,3.25-0.75,0.06,0.12,Jérôme Roussillon,Bundesliga,D
+2,3.0,2017/2018,Montpellier,22,1894,3,3,0.95,1.28,1.65-1.35,4.30+1.30,0.08,0.2,Jérôme Roussillon,Bundesliga,D
+3,4.0,2016/2017,Montpellier,32,2749,1,1,0.56,1.18,0.50-0.50,3.14+2.14,0.02,0.1,Jérôme Roussillon,Bundesliga,D
+4,5.0,2015/2016,Montpellier,33,2679,3,3,0.54,0.84,1.19-1.81,2.97-0.03,0.04,0.1,Jérôme Roussillon,Bundesliga,D
+5,,,,144,12173,11,12,0.68,1.05,6.14-4.86,16.69+4.69,0.05,0.12,Jérôme Roussillon,Bundesliga,D
+0,1.0,2019/2020,Borussia M.Gladbach,19,1450,5,3,1.43,0.74,3.93-1.07,2.62-0.38,0.24,0.16,Ramy Bensebaini,Bundesliga,D
+1,2.0,2018/2019,Rennes,25,2160,1,0,0.67,0.42,1.44+0.44,1.06+1.06,0.06,0.04,Ramy Bensebaini,Bundesliga,D
+2,3.0,2017/2018,Rennes,29,2347,0,1,0.73,0.31,1.11+1.11,1.27+0.27,0.04,0.05,Ramy Bensebaini,Bundesliga,D
+3,4.0,2016/2017,Rennes,25,1837,0,0,0.78,0.39,0.48+0.48,0.48+0.48,0.02,0.02,Ramy Bensebaini,Bundesliga,D
+4,5.0,2015/2016,Montpellier,22,1340,2,0,0.67,0.13,0.44-1.56,0.47+0.47,0.03,0.03,Ramy Bensebaini,Bundesliga,D
+5,,,,120,9134,8,4,0.83,0.39,7.40-0.60,5.90+1.90,0.07,0.06,Ramy Bensebaini,Bundesliga,D
+0,1.0,2019/2020,Mainz 05,22,1804,0,0,0.45,1.6,0.29+0.29,3.25+3.25,0.01,0.16,Aarón Martín,Bundesliga,D
+1,2.0,2018/2019,Mainz 05,33,2880,0,3,0.56,2.0,0.62+0.62,4.54+1.54,0.02,0.14,Aarón Martín,Bundesliga,D
+2,3.0,2017/2018,Espanyol,32,2815,0,0,0.16,0.99,0.11+0.11,2.46+2.46,0.0,0.08,Aarón Martín,Bundesliga,D
+3,4.0,2016/2017,Espanyol,30,2586,0,0,0.1,0.77,0.07+0.07,1.01+1.01,0.0,0.04,Aarón Martín,Bundesliga,D
+4,,,,117,10085,0,3,0.31,1.33,1.09+1.09,11.26+8.26,0.01,0.1,Aarón Martín,Bundesliga,D
+0,1.0,2019/2020,Schalke 04,16,1363,0,0,0.79,0.07,1.17+1.17,0.17+0.17,0.08,0.01,Matija Nastasic,Bundesliga,D
+1,2.0,2018/2019,Schalke 04,28,2453,1,0,0.77,0.18,2.30+1.30,0.17+0.17,0.08,0.01,Matija Nastasic,Bundesliga,D
+2,3.0,2017/2018,Schalke 04,24,1989,0,0,0.36,0.14,0.98+0.98,0.16+0.16,0.04,0.01,Matija Nastasic,Bundesliga,D
+3,4.0,2016/2017,Schalke 04,22,1921,0,0,0.14,0.14,0.04+0.04,0.19+0.19,0.0,0.01,Matija Nastasic,Bundesliga,D
+4,5.0,2015/2016,Schalke 04,1,16,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Matija Nastasic,Bundesliga,D
+5,6.0,2014/2015,Schalke 04,16,1440,0,0,0.38,0.44,0.89+0.89,0.47+0.47,0.06,0.03,Matija Nastasic,Bundesliga,D
+6,,,,107,9182,1,0,0.49,0.19,5.38+4.38,1.16+1.16,0.05,0.01,Matija Nastasic,Bundesliga,D
+0,1.0,2019/2020,Paderborn,16,1363,1,2,0.53,0.73,1.36+0.36,1.61-0.39,0.09,0.11,Christian Strohdiek,Bundesliga,D
+1,2.0,2014/2015,Paderborn,22,1608,0,0,0.34,0.17,0.19+0.19,0.10+0.10,0.01,0.01,Christian Strohdiek,Bundesliga,D
+2,,,,38,2971,1,2,0.42,0.42,1.56+0.56,1.71-0.29,0.05,0.05,Christian Strohdiek,Bundesliga,D
+0,1.0,2019/2020,Freiburg,34,3036,2,8,0.95,2.37,1.21-0.79,8.44+0.44,0.04,0.25,Christian Günter,Bundesliga,D
+1,2.0,2018/2019,Freiburg,32,2880,0,5,0.91,1.5,1.13+1.13,4.64-0.36,0.04,0.14,Christian Günter,Bundesliga,D
+2,3.0,2017/2018,Freiburg,34,3060,1,3,0.76,1.47,1.71+0.71,3.65+0.65,0.05,0.11,Christian Günter,Bundesliga,D
+3,4.0,2016/2017,Freiburg,31,2696,0,2,0.5,0.97,0.37+0.37,1.76-0.24,0.01,0.06,Christian Günter,Bundesliga,D
+4,5.0,2014/2015,Freiburg,34,2886,1,2,0.81,0.75,1.13+0.13,1.50-0.50,0.04,0.05,Christian Günter,Bundesliga,D
+5,,,,165,14558,4,20,0.79,1.43,5.55+1.55,19.98-0.02,0.03,0.12,Christian Günter,Bundesliga,D
+0,1.0,2019/2020,Hertha Berlin,18,1460,1,1,0.12,0.49,0.62-0.38,0.73-0.27,0.04,0.05,Jordan Torunarigha,Bundesliga,D
+1,2.0,2018/2019,Hertha Berlin,14,1163,2,2,0.54,0.39,1.01-0.99,0.89-1.11,0.08,0.07,Jordan Torunarigha,Bundesliga,D
+2,3.0,2017/2018,Hertha Berlin,12,660,1,0,0.27,0.14,0.94-0.06,0.05+0.05,0.13,0.01,Jordan Torunarigha,Bundesliga,D
+3,4.0,2016/2017,Hertha Berlin,8,480,1,0,0.38,0.19,0.16-0.84,0.13+0.13,0.03,0.03,Jordan Torunarigha,Bundesliga,D
+4,,,,52,3763,5,3,0.31,0.36,2.73-2.27,1.81-1.19,0.07,0.04,Jordan Torunarigha,Bundesliga,D
+0,1.0,2019/2020,Wolfsburg,9,810,0,0,1.0,0.0,1.21+1.21,0.00,0.13,0.0,Jeffrey Bruma,Bundesliga,D
+1,2.0,2019/2020,Mainz 05,8,678,0,0,0.93,0.0,0.44+0.44,0.00,0.06,0.0,Jeffrey Bruma,Bundesliga,D
+2,3.0,2018/2019,Schalke 04,9,620,0,0,0.29,0.0,0.05+0.05,0.00,0.01,0.0,Jeffrey Bruma,Bundesliga,D
+3,4.0,2017/2018,Wolfsburg,11,990,0,0,0.18,0.09,0.16+0.16,0.04+0.04,0.01,0.0,Jeffrey Bruma,Bundesliga,D
+4,5.0,2016/2017,Wolfsburg,20,1717,1,0,0.58,0.26,0.92-0.08,0.27+0.27,0.05,0.01,Jeffrey Bruma,Bundesliga,D
+5,,,,57,4815,1,0,0.58,0.11,2.77+1.77,0.32+0.32,0.05,0.01,Jeffrey Bruma,Bundesliga,D
+0,1.0,2019/2020,Werder Bremen,27,2195,1,3,0.45,0.82,0.98-0.02,1.52-1.48,0.04,0.06,Marco Friedl,Bundesliga,D
+1,2.0,2018/2019,Werder Bremen,7,473,0,0,0.19,0.0,0.04+0.04,0.00,0.01,0.0,Marco Friedl,Bundesliga,D
+2,3.0,2017/2018,Werder Bremen,9,598,0,0,0.75,0.45,0.19+0.19,0.45+0.45,0.03,0.07,Marco Friedl,Bundesliga,D
+3,4.0,2017/2018,Bayern Munich,1,39,0,0,0.0,4.62,0.00,0.05+0.05,0.0,0.11,Marco Friedl,Bundesliga,D
+4,,,,44,3305,1,3,0.46,0.68,1.21+0.21,2.03-0.97,0.03,0.06,Marco Friedl,Bundesliga,D
+0,1.0,2019/2020,Wolfsburg,21,1592,1,0,0.23,0.17,0.29-0.71,0.17+0.17,0.02,0.01,Robin Knoche,Bundesliga,D
+1,2.0,2018/2019,Wolfsburg,31,2790,3,0,0.45,0.06,2.64-0.36,0.14+0.14,0.09,0.0,Robin Knoche,Bundesliga,D
+2,3.0,2017/2018,Wolfsburg,24,2106,1,2,0.26,0.17,0.76-0.24,0.33-1.67,0.03,0.01,Robin Knoche,Bundesliga,D
+3,4.0,2016/2017,Wolfsburg,23,1872,1,1,0.53,0.24,0.83-0.17,1.44+0.44,0.04,0.07,Robin Knoche,Bundesliga,D
+4,5.0,2015/2016,Wolfsburg,11,817,1,0,0.22,0.33,0.67-0.33,0.05+0.05,0.07,0.01,Robin Knoche,Bundesliga,D
+5,6.0,2014/2015,Wolfsburg,27,2295,2,0,0.39,0.24,1.62-0.38,1.21+1.21,0.06,0.05,Robin Knoche,Bundesliga,D
+6,,,,137,11472,9,3,0.37,0.18,6.81-2.19,3.34+0.34,0.05,0.03,Robin Knoche,Bundesliga,D
+0,1.0,2019/2020,Hertha Berlin,21,1738,1,0,0.52,0.21,0.85-0.15,0.44+0.44,0.04,0.02,Niklas Stark,Bundesliga,D
+1,2.0,2018/2019,Hertha Berlin,22,1871,1,0,0.53,0.14,0.80-0.20,0.32+0.32,0.04,0.02,Niklas Stark,Bundesliga,D
+2,3.0,2017/2018,Hertha Berlin,26,2209,1,1,0.45,0.16,0.99-0.01,0.40-0.60,0.04,0.02,Niklas Stark,Bundesliga,D
+3,4.0,2016/2017,Hertha Berlin,27,2358,1,0,0.8,0.15,2.32+1.32,0.12+0.12,0.09,0.0,Niklas Stark,Bundesliga,D
+4,5.0,2015/2016,Hertha Berlin,21,1406,2,0,0.9,0.06,1.23-0.77,0.02+0.02,0.08,0.0,Niklas Stark,Bundesliga,D
+5,,,,117,9582,6,1,0.63,0.15,6.18+0.18,1.29+0.29,0.06,0.01,Niklas Stark,Bundesliga,D
+0,1.0,2019/2020,Paderborn,22,1586,0,1,0.45,0.57,0.12+0.12,0.85-0.15,0.01,0.05,Laurent Jans,Bundesliga,D
+1,,,,22,1586,0,1,0.45,0.57,0.12+0.12,0.85-0.15,0.01,0.05,Laurent Jans,Bundesliga,D
+0,1.0,2019/2020,Bayer Leverkusen,24,1906,0,2,0.47,0.71,0.23+0.23,1.11-0.89,0.01,0.05,Wendell,Bundesliga,D
+1,2.0,2018/2019,Bayer Leverkusen,28,2277,2,2,0.43,0.63,2.71+0.71,1.80-0.20,0.11,0.07,Wendell,Bundesliga,D
+2,3.0,2017/2018,Bayer Leverkusen,26,2122,2,3,0.59,1.1,2.72+0.72,2.49-0.51,0.12,0.11,Wendell,Bundesliga,D
+3,4.0,2016/2017,Bayer Leverkusen,32,2522,2,2,0.64,0.96,0.99-1.01,2.02+0.02,0.04,0.07,Wendell,Bundesliga,D
+4,5.0,2015/2016,Bayer Leverkusen,28,2408,0,0,0.71,0.71,0.76+0.76,1.76+1.76,0.03,0.07,Wendell,Bundesliga,D
+5,6.0,2014/2015,Bayer Leverkusen,26,2251,1,1,0.68,0.92,0.83-0.17,1.33+0.33,0.03,0.05,Wendell,Bundesliga,D
+6,,,,164,13486,7,10,0.59,0.84,8.23+1.23,10.51+0.51,0.05,0.07,Wendell,Bundesliga,D
+0,1.0,2019/2020,Werder Bremen,14,1120,0,0,0.08,0.4,0.30+0.30,0.70+0.70,0.02,0.06,Kevin Vogt,Bundesliga,D
+1,2.0,2019/2020,Hoffenheim,11,962,0,0,0.0,0.09,0.00,0.10+0.10,0.0,0.01,Kevin Vogt,Bundesliga,D
+2,3.0,2018/2019,Hoffenheim,28,2406,0,0,0.15,0.22,0.13+0.13,0.25+0.25,0.0,0.01,Kevin Vogt,Bundesliga,D
+3,4.0,2017/2018,Hoffenheim,31,2790,0,1,0.13,0.29,0.19+0.19,0.65-0.35,0.01,0.02,Kevin Vogt,Bundesliga,D
+4,5.0,2016/2017,Hoffenheim,31,2602,0,0,0.1,0.31,0.14+0.14,0.52+0.52,0.0,0.02,Kevin Vogt,Bundesliga,D
+5,6.0,2015/2016,FC Cologne,23,1478,0,2,0.55,0.85,0.61+0.61,1.58-0.42,0.04,0.1,Kevin Vogt,Bundesliga,D
+6,7.0,2014/2015,FC Cologne,32,2689,1,3,0.7,0.97,1.38+0.38,2.43-0.57,0.05,0.08,Kevin Vogt,Bundesliga,D
+7,,,,170,14047,1,6,0.27,0.47,2.74+1.74,6.22+0.22,0.02,0.04,Kevin Vogt,Bundesliga,D
+0,1.0,2019/2020,Augsburg,21,1643,0,1,0.0,0.27,0.00,0.21-0.79,0.0,0.01,Jeffrey Gouweleeuw,Bundesliga,D
+1,2.0,2018/2019,Augsburg,25,2093,0,2,0.3,0.34,0.86+0.86,2.48+0.48,0.04,0.11,Jeffrey Gouweleeuw,Bundesliga,D
+2,3.0,2017/2018,Augsburg,27,2389,0,0,0.53,0.26,1.34+1.34,0.33+0.33,0.05,0.01,Jeffrey Gouweleeuw,Bundesliga,D
+3,4.0,2016/2017,Augsburg,18,1550,2,1,0.41,0.35,0.90-1.10,0.37-0.63,0.05,0.02,Jeffrey Gouweleeuw,Bundesliga,D
+4,5.0,2015/2016,Augsburg,11,990,0,0,0.18,0.45,0.72+0.72,0.29+0.29,0.07,0.03,Jeffrey Gouweleeuw,Bundesliga,D
+5,,,,102,8665,2,4,0.31,0.32,3.82+1.82,3.67-0.33,0.04,0.04,Jeffrey Gouweleeuw,Bundesliga,D
+0,1.0,2019/2020,Hertha Berlin,23,1870,0,2,0.1,0.53,0.26+0.26,1.70-0.30,0.01,0.08,Lukas Klünter,Bundesliga,D
+1,2.0,2018/2019,Hertha Berlin,10,593,0,0,0.76,0.3,0.14+0.14,0.50+0.50,0.02,0.08,Lukas Klünter,Bundesliga,D
+2,3.0,2017/2018,FC Cologne,19,1333,1,0,1.15,0.88,1.80+0.80,1.01+1.01,0.12,0.07,Lukas Klünter,Bundesliga,D
+3,4.0,2016/2017,FC Cologne,8,720,1,1,0.25,0.5,0.13-0.87,2.09+1.09,0.02,0.26,Lukas Klünter,Bundesliga,D
+4,5.0,2015/2016,FC Cologne,1,14,0,0,6.43,0.0,0.11+0.11,0.00,0.69,0.0,Lukas Klünter,Bundesliga,D
+5,,,,61,4530,2,3,0.54,0.6,2.44+0.44,5.30+2.30,0.05,0.11,Lukas Klünter,Bundesliga,D
+0,1.0,2019/2020,Wolfsburg,20,1694,3,1,0.58,0.85,1.88-1.12,2.60+1.60,0.1,0.14,Kevin Mbabu,Bundesliga,D
+1,2.0,2015/2016,Newcastle United,3,147,0,0,0.61,0.61,0.02+0.02,0.11+0.11,0.01,0.07,Kevin Mbabu,Bundesliga,D
+2,,,,23,1841,3,1,0.59,0.83,1.90-1.10,2.71+1.71,0.09,0.13,Kevin Mbabu,Bundesliga,D
+0,1.0,2019/2020,Eintracht Frankfurt,20,1692,2,0,0.37,0.11,1.30-0.70,0.10+0.10,0.07,0.01,David Abraham,Bundesliga,D
+1,2.0,2018/2019,Eintracht Frankfurt,17,1423,0,0,0.32,0.32,1.14+1.14,0.31+0.31,0.07,0.02,David Abraham,Bundesliga,D
+2,3.0,2017/2018,Eintracht Frankfurt,27,2303,0,2,0.27,0.27,0.25+0.25,0.98-1.02,0.01,0.04,David Abraham,Bundesliga,D
+3,4.0,2016/2017,Eintracht Frankfurt,30,2583,1,2,0.59,0.35,0.98-0.02,1.19-0.81,0.03,0.04,David Abraham,Bundesliga,D
+4,5.0,2015/2016,Eintracht Frankfurt,31,2547,0,0,0.42,0.21,0.64+0.64,0.20+0.20,0.02,0.01,David Abraham,Bundesliga,D
+5,6.0,2014/2015,Hoffenheim,14,894,0,0,0.7,0.1,0.35+0.35,0.02+0.02,0.04,0.0,David Abraham,Bundesliga,D
+6,,,,139,11442,3,4,0.43,0.24,4.66+1.66,2.81-1.19,0.04,0.02,David Abraham,Bundesliga,D
+0,1.0,2019/2020,Freiburg,32,2708,1,0,1.16,0.4,4.20+3.20,1.29+1.29,0.14,0.04,Robin Koch,Bundesliga,D
+1,2.0,2018/2019,Freiburg,24,1898,1,0,0.52,0.24,1.09+0.09,0.40+0.40,0.05,0.02,Robin Koch,Bundesliga,D
+2,3.0,2017/2018,Freiburg,26,1916,2,1,0.61,0.28,0.82-1.18,0.90-0.10,0.04,0.04,Robin Koch,Bundesliga,D
+3,,,,82,6522,4,1,0.81,0.32,6.10+2.10,2.59+1.59,0.08,0.04,Robin Koch,Bundesliga,D
+0,1.0,2019/2020,Eintracht Frankfurt,22,1729,1,1,0.52,0.42,0.66-0.34,0.90-0.10,0.03,0.05,Evan Ndicka,Bundesliga,D
+1,2.0,2018/2019,Eintracht Frankfurt,27,2304,1,1,0.51,0.16,1.43+0.43,0.09-0.91,0.06,0.0,Evan Ndicka,Bundesliga,D
+2,,,,49,4033,2,2,0.51,0.27,2.09+0.09,0.99-1.01,0.05,0.02,Evan Ndicka,Bundesliga,D
+0,1.0,2019/2020,Eintracht Frankfurt,23,1967,0,0,0.0,0.41,0.00,0.35+0.35,0.0,0.02,Makoto Hasebe,Bundesliga,D
+1,2.0,2018/2019,Eintracht Frankfurt,28,2520,0,0,0.07,0.25,0.06+0.06,0.63+0.63,0.0,0.02,Makoto Hasebe,Bundesliga,D
+2,3.0,2017/2018,Eintracht Frankfurt,24,2089,0,0,0.09,0.17,0.08+0.08,0.10+0.10,0.0,0.0,Makoto Hasebe,Bundesliga,D
+3,4.0,2016/2017,Eintracht Frankfurt,22,1890,1,1,0.38,0.71,1.74+0.74,1.07+0.07,0.08,0.05,Makoto Hasebe,Bundesliga,D
+4,5.0,2015/2016,Eintracht Frankfurt,32,2676,1,2,0.24,0.98,0.14-0.86,2.58+0.58,0.0,0.09,Makoto Hasebe,Bundesliga,D
+5,6.0,2014/2015,Eintracht Frankfurt,33,2857,0,2,0.09,0.82,0.06+0.06,1.76-0.24,0.0,0.06,Makoto Hasebe,Bundesliga,D
+6,,,,162,13999,2,5,0.14,0.58,2.09+0.09,6.49+1.49,0.01,0.04,Makoto Hasebe,Bundesliga,D
+0,1.0,2019/2020,Schalke 04,26,1769,3,1,0.56,0.15,1.68-1.32,0.30-0.70,0.09,0.02,Ozan Kabak,Bundesliga,D
+1,2.0,2018/2019,VfB Stuttgart,15,1350,3,0,0.73,0.13,1.31-1.69,0.04+0.04,0.09,0.0,Ozan Kabak,Bundesliga,D
+2,,,,41,3119,6,1,0.63,0.14,2.99-3.01,0.34-0.66,0.09,0.01,Ozan Kabak,Bundesliga,D
+0,1.0,2019/2020,Bayern Munich,24,1813,0,2,0.3,0.25,0.23+0.23,1.42-0.58,0.01,0.07,Jérôme Boateng,Bundesliga,D
+1,2.0,2018/2019,Bayern Munich,20,1695,0,2,0.74,0.58,0.59+0.59,1.14-0.86,0.03,0.06,Jérôme Boateng,Bundesliga,D
+2,3.0,2017/2018,Bayern Munich,19,1646,1,2,0.71,0.71,1.01+0.01,1.78-0.22,0.06,0.1,Jérôme Boateng,Bundesliga,D
+3,4.0,2016/2017,Bayern Munich,13,824,0,1,0.44,0.66,0.10+0.10,0.49-0.51,0.01,0.05,Jérôme Boateng,Bundesliga,D
+4,5.0,2015/2016,Bayern Munich,19,1354,0,3,0.47,0.86,0.18+0.18,2.69-0.31,0.01,0.18,Jérôme Boateng,Bundesliga,D
+5,6.0,2014/2015,Bayern Munich,27,2139,0,0,0.84,0.93,0.68+0.68,1.36+1.36,0.03,0.06,Jérôme Boateng,Bundesliga,D
+6,,,,122,9471,1,10,0.61,0.67,2.78+1.78,8.87-1.13,0.03,0.08,Jérôme Boateng,Bundesliga,D
+0,1.0,2019/2020,Fortuna Duesseldorf,34,2931,1,2,0.49,0.77,0.48-0.52,2.35+0.35,0.01,0.07,Matthias Zimmermann,Bundesliga,D
+1,2.0,2018/2019,Fortuna Duesseldorf,34,3051,1,3,0.44,0.59,0.41-0.59,2.94-0.06,0.01,0.09,Matthias Zimmermann,Bundesliga,D
+2,3.0,2017/2018,VfB Stuttgart,3,75,0,0,1.2,0.0,0.08+0.08,0.00,0.1,0.0,Matthias Zimmermann,Bundesliga,D
+3,4.0,2015/2016,VfB Stuttgart,2,167,0,0,0.54,0.54,0.01+0.01,0.30+0.30,0.01,0.16,Matthias Zimmermann,Bundesliga,D
+4,,,,73,6224,2,5,0.48,0.67,0.99-1.01,5.59+0.59,0.01,0.08,Matthias Zimmermann,Bundesliga,D
+0,1.0,2019/2020,Freiburg,22,1818,0,1,0.35,0.1,0.75+0.75,0.58-0.42,0.04,0.03,Philipp Lienhart,Bundesliga,D
+1,2.0,2018/2019,Freiburg,14,607,0,0,0.59,0.3,0.56+0.56,0.10+0.10,0.08,0.02,Philipp Lienhart,Bundesliga,D
+2,3.0,2017/2018,Freiburg,11,869,0,0,0.21,0.1,0.06+0.06,0.08+0.08,0.01,0.01,Philipp Lienhart,Bundesliga,D
+3,,,,47,3294,0,1,0.36,0.14,1.37+1.37,0.77-0.23,0.04,0.02,Philipp Lienhart,Bundesliga,D
+0,1.0,2019/2020,Werder Bremen,28,2429,2,2,0.44,0.67,0.74-1.26,1.13-0.87,0.03,0.04,Theodor Gebre Selassie,Bundesliga,D
+1,2.0,2018/2019,Werder Bremen,32,2814,3,2,0.9,0.67,4.13+1.13,1.78-0.22,0.13,0.06,Theodor Gebre Selassie,Bundesliga,D
+2,3.0,2017/2018,Werder Bremen,32,2829,3,0,0.54,0.7,2.66-0.34,1.36+1.36,0.08,0.04,Theodor Gebre Selassie,Bundesliga,D
+3,4.0,2016/2017,Werder Bremen,30,2340,5,2,1.04,0.69,3.54-1.46,1.51-0.49,0.14,0.06,Theodor Gebre Selassie,Bundesliga,D
+4,5.0,2015/2016,Werder Bremen,33,2961,1,2,0.55,0.76,1.01+0.01,1.83-0.17,0.03,0.06,Theodor Gebre Selassie,Bundesliga,D
+5,6.0,2014/2015,Werder Bremen,26,2276,3,1,0.71,0.75,2.98-0.02,1.04+0.04,0.12,0.04,Theodor Gebre Selassie,Bundesliga,D
+6,,,,181,15649,17,9,0.69,0.71,15.06-1.94,8.65-0.35,0.09,0.05,Theodor Gebre Selassie,Bundesliga,D
+0,1.0,2019/2020,Fortuna Duesseldorf,25,2060,1,1,0.61,0.96,0.48-0.52,1.71+0.71,0.02,0.07,Niko Gießelmann,Bundesliga,D
+1,2.0,2018/2019,Fortuna Duesseldorf,30,2594,0,3,0.9,0.94,0.92+0.92,3.24+0.24,0.03,0.11,Niko Gießelmann,Bundesliga,D
+2,,,,55,4654,1,4,0.77,0.95,1.40+0.40,4.95+0.95,0.03,0.1,Niko Gießelmann,Bundesliga,D
+0,1.0,2019/2020,Augsburg,26,1954,0,0,0.18,0.23,0.15+0.15,0.22+0.22,0.01,0.01,Felix Uduokhai,Bundesliga,D
+1,2.0,2018/2019,Wolfsburg,11,229,0,0,0.39,0.0,0.01+0.01,0.00,0.01,0.0,Felix Uduokhai,Bundesliga,D
+2,3.0,2017/2018,Wolfsburg,19,1552,1,0,0.23,0.06,0.13-0.87,0.03+0.03,0.01,0.0,Felix Uduokhai,Bundesliga,D
+3,,,,56,3735,1,0,0.22,0.14,0.29-0.71,0.24+0.24,0.01,0.01,Felix Uduokhai,Bundesliga,D
+0,1.0,2019/2020,Union Berlin,23,1941,0,0,0.56,0.05,0.93+0.93,0.01+0.01,0.04,0.0,Keven Schlotterbeck,Bundesliga,D
+1,2.0,2018/2019,Freiburg,9,773,0,0,0.23,0.0,0.45+0.45,0.00,0.05,0.0,Keven Schlotterbeck,Bundesliga,D
+2,,,,32,2714,0,0,0.46,0.03,1.38+1.38,0.01+0.01,0.05,0.0,Keven Schlotterbeck,Bundesliga,D
+0,1.0,2019/2020,Bayer Leverkusen,25,2091,0,1,0.26,0.22,0.35+0.35,0.20-0.80,0.02,0.01,Jonathan Tah,Bundesliga,D
+1,2.0,2018/2019,Bayer Leverkusen,33,2942,3,1,0.37,0.18,2.26-0.74,0.78-0.22,0.07,0.02,Jonathan Tah,Bundesliga,D
+2,3.0,2017/2018,Bayer Leverkusen,28,2424,0,2,0.26,0.41,0.60+0.60,0.64-1.36,0.02,0.02,Jonathan Tah,Bundesliga,D
+3,4.0,2016/2017,Bayer Leverkusen,19,1637,1,1,0.55,0.22,0.93-0.07,0.89-0.11,0.05,0.05,Jonathan Tah,Bundesliga,D
+4,5.0,2015/2016,Bayer Leverkusen,29,2566,0,0,0.53,0.25,0.71+0.71,0.71+0.71,0.03,0.02,Jonathan Tah,Bundesliga,D
+5,,,,134,11660,4,5,0.39,0.25,4.85+0.85,3.21-1.79,0.04,0.02,Jonathan Tah,Bundesliga,D
+0,1.0,2019/2020,Union Berlin,23,1977,1,0,0.59,0.27,1.04+0.04,0.77+0.77,0.05,0.03,Neven Subotic,Bundesliga,D
+1,2.0,2018/2019,Saint-Etienne,26,2155,1,0,0.54,0.29,2.24+1.24,0.44+0.44,0.09,0.02,Neven Subotic,Bundesliga,D
+2,3.0,2017/2018,Saint-Etienne,16,1440,2,1,0.38,0.25,1.10-0.90,1.02+0.02,0.07,0.06,Neven Subotic,Bundesliga,D
+3,4.0,2017/2018,Borussia Dortmund,4,271,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Neven Subotic,Bundesliga,D
+4,5.0,2016/2017,FC Cologne,12,885,0,0,0.2,0.0,0.15+0.15,0.00,0.02,0.0,Neven Subotic,Bundesliga,D
+5,6.0,2015/2016,Borussia Dortmund,6,460,0,0,0.39,0.39,0.06+0.06,0.12+0.12,0.01,0.02,Neven Subotic,Bundesliga,D
+6,7.0,2014/2015,Borussia Dortmund,28,2272,2,0,0.75,0.44,1.09-0.91,0.47+0.47,0.04,0.02,Neven Subotic,Bundesliga,D
+7,,,,115,9460,6,1,0.52,0.29,5.67-0.33,2.81+1.81,0.05,0.03,Neven Subotic,Bundesliga,D
+0,1.0,2019/2020,Werder Bremen,22,1980,0,0,0.64,0.23,0.79+0.79,0.38+0.38,0.04,0.02,Niklas Moisander,Bundesliga,D
+1,2.0,2018/2019,Werder Bremen,30,2638,0,0,0.27,0.41,0.34+0.34,0.69+0.69,0.01,0.02,Niklas Moisander,Bundesliga,D
+2,3.0,2017/2018,Werder Bremen,25,2250,2,0,0.72,0.32,1.19-0.81,0.89+0.89,0.05,0.04,Niklas Moisander,Bundesliga,D
+3,4.0,2016/2017,Werder Bremen,30,2654,0,1,0.31,0.27,1.12+1.12,0.59-0.41,0.04,0.02,Niklas Moisander,Bundesliga,D
+4,5.0,2015/2016,Sampdoria,22,1777,0,0,0.1,0.3,0.09+0.09,0.25+0.25,0.0,0.01,Niklas Moisander,Bundesliga,D
+5,,,,129,11299,2,1,0.41,0.31,3.52+1.52,2.81+1.81,0.03,0.02,Niklas Moisander,Bundesliga,D
+0,1.0,2019/2020,Paderborn,23,2070,2,0,0.52,0.17,1.14-0.86,0.15+0.15,0.05,0.01,Sebastian Schonlau,Bundesliga,D
+1,,,,23,2070,2,0,0.52,0.17,1.14-0.86,0.15+0.15,0.05,0.01,Sebastian Schonlau,Bundesliga,D
+0,1.0,2019/2020,FC Cologne,31,2352,1,1,0.46,0.57,1.17+0.17,1.34+0.34,0.04,0.05,Kingsley Ehizibue,Bundesliga,D
+1,,,,31,2352,1,1,0.46,0.57,1.17+0.17,1.34+0.34,0.04,0.05,Kingsley Ehizibue,Bundesliga,D
+0,1.0,2019/2020,Bayern Munich,29,2228,3,5,0.48,1.45,2.37-0.63,4.26-0.74,0.1,0.17,Alphonso Davies,Bundesliga,D
+1,2.0,2018/2019,Bayern Munich,6,66,1,0,2.73,0.0,0.18-0.82,0.00,0.25,0.0,Alphonso Davies,Bundesliga,D
+2,,,,35,2294,4,5,0.55,1.41,2.55-1.45,4.26-0.74,0.1,0.17,Alphonso Davies,Bundesliga,D
+0,1.0,2019/2020,Mainz 05,25,2118,2,2,0.51,0.21,0.59-1.41,1.22-0.78,0.03,0.05,Jeremiah St. Juste,Bundesliga,D
+1,,,,25,2118,2,2,0.51,0.21,0.59-1.41,1.22-0.78,0.03,0.05,Jeremiah St. Juste,Bundesliga,D
+0,1.0,2019/2020,Borussia Dortmund,29,2112,1,3,0.34,0.6,0.34-0.66,2.30-0.70,0.01,0.1,Lukasz Piszczek,Bundesliga,D
+1,2.0,2018/2019,Borussia Dortmund,20,1764,1,6,0.61,1.07,0.52-0.48,3.03-2.97,0.03,0.15,Lukasz Piszczek,Bundesliga,D
+2,3.0,2017/2018,Borussia Dortmund,24,2141,0,3,0.84,0.76,0.87+0.87,2.83-0.17,0.04,0.12,Lukasz Piszczek,Bundesliga,D
+3,4.0,2016/2017,Borussia Dortmund,25,2033,5,1,0.84,0.8,2.63-2.37,2.15+1.15,0.12,0.1,Lukasz Piszczek,Bundesliga,D
+4,5.0,2015/2016,Borussia Dortmund,20,1513,0,3,0.77,1.25,0.33+0.33,3.74+0.74,0.02,0.22,Lukasz Piszczek,Bundesliga,D
+5,6.0,2014/2015,Borussia Dortmund,22,1652,0,1,0.65,0.87,0.93+0.93,1.42+0.42,0.05,0.08,Lukasz Piszczek,Bundesliga,D
+6,,,,140,11215,7,17,0.67,0.87,5.63-1.37,15.47-1.53,0.05,0.12,Lukasz Piszczek,Bundesliga,D
+0,1.0,2019/2020,Werder Bremen,24,2066,0,1,0.3,0.22,0.54+0.54,0.79-0.21,0.02,0.03,Milos Veljkovic,Bundesliga,D
+1,2.0,2018/2019,Werder Bremen,23,1879,1,0,0.43,0.19,0.58-0.42,0.26+0.26,0.03,0.01,Milos Veljkovic,Bundesliga,D
+2,3.0,2017/2018,Werder Bremen,30,2658,1,0,0.14,0.17,0.22-0.78,0.32+0.32,0.01,0.01,Milos Veljkovic,Bundesliga,D
+3,4.0,2016/2017,Werder Bremen,26,1812,0,0,0.15,0.25,0.20+0.20,0.27+0.27,0.01,0.01,Milos Veljkovic,Bundesliga,D
+4,5.0,2015/2016,Werder Bremen,3,92,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Milos Veljkovic,Bundesliga,D
+5,,,,106,8507,2,1,0.24,0.2,1.55-0.45,1.65+0.65,0.02,0.02,Milos Veljkovic,Bundesliga,D
+0,1.0,2019/2020,Hoffenheim,25,2085,1,4,1.17,0.35,2.36+1.36,2.52-1.48,0.1,0.11,Benjamin Hübner,Bundesliga,D
+1,2.0,2018/2019,Hoffenheim,10,813,0,0,0.89,0.0,1.04+1.04,0.00,0.12,0.0,Benjamin Hübner,Bundesliga,D
+2,3.0,2017/2018,Hoffenheim,27,2324,3,2,0.85,0.43,2.37-0.63,0.62-1.38,0.09,0.02,Benjamin Hübner,Bundesliga,D
+3,4.0,2016/2017,Hoffenheim,25,2151,2,3,0.71,0.29,1.22-0.78,1.40-1.60,0.05,0.06,Benjamin Hübner,Bundesliga,D
+4,5.0,2015/2016,Ingolstadt,30,2632,1,0,0.68,0.1,2.09+1.09,0.11+0.11,0.07,0.0,Benjamin Hübner,Bundesliga,D
+5,,,,117,10005,7,9,0.85,0.26,9.08+2.08,4.65-4.35,0.08,0.04,Benjamin Hübner,Bundesliga,D
+0,1.0,2019/2020,RasenBallsport Leipzig,29,2526,3,3,1.1,1.28,2.44-0.56,4.26+1.26,0.09,0.15,Marcel Halstenberg,Bundesliga,D
+1,2.0,2018/2019,RasenBallsport Leipzig,28,2415,3,6,0.86,2.05,3.98+0.98,7.99+1.99,0.15,0.3,Marcel Halstenberg,Bundesliga,D
+2,3.0,2017/2018,RasenBallsport Leipzig,15,1175,2,2,1.91,1.15,1.43-0.57,1.33-0.67,0.11,0.1,Marcel Halstenberg,Bundesliga,D
+3,4.0,2016/2017,RasenBallsport Leipzig,30,2661,0,1,0.95,0.88,1.71+1.71,2.83+1.83,0.06,0.1,Marcel Halstenberg,Bundesliga,D
+4,,,,102,8777,8,12,1.1,1.35,9.56+1.56,16.41+4.41,0.1,0.17,Marcel Halstenberg,Bundesliga,D
+0,1.0,2019/2020,FC Cologne,26,2210,1,1,0.53,0.29,2.40+1.40,0.89-0.11,0.1,0.04,Rafael Czichos,Bundesliga,D
+1,,,,26,2210,1,1,0.53,0.29,2.40+1.40,0.89-0.11,0.1,0.04,Rafael Czichos,Bundesliga,D
+0,1.0,2019/2020,Wolfsburg,25,2229,0,1,0.52,0.24,0.91+0.91,1.35+0.35,0.04,0.05,John Brooks,Bundesliga,D
+1,2.0,2018/2019,Wolfsburg,29,2610,3,2,0.66,0.14,2.71-0.29,0.68-1.32,0.09,0.02,John Brooks,Bundesliga,D
+2,3.0,2017/2018,Wolfsburg,9,732,0,0,0.12,0.0,0.06+0.06,0.00,0.01,0.0,John Brooks,Bundesliga,D
+3,4.0,2016/2017,Hertha Berlin,24,2118,2,0,0.55,0.04,0.81-1.19,0.05+0.05,0.03,0.0,John Brooks,Bundesliga,D
+4,5.0,2015/2016,Hertha Berlin,23,1805,1,1,0.45,0.1,0.78-0.22,0.55-0.45,0.04,0.03,John Brooks,Bundesliga,D
+5,6.0,2014/2015,Hertha Berlin,27,2185,1,0,0.62,0.04,1.20+0.20,0.01+0.01,0.05,0.0,John Brooks,Bundesliga,D
+6,,,,137,11679,7,4,0.54,0.11,6.47-0.53,2.64-1.36,0.05,0.02,John Brooks,Bundesliga,D
+0,1.0,2019/2020,Borussia Dortmund,29,2309,0,1,0.31,0.12,0.81+0.81,0.47-0.53,0.03,0.02,Manuel Akanji,Bundesliga,D
+1,2.0,2018/2019,Borussia Dortmund,25,2206,1,0,0.33,0.24,0.38-0.62,0.62+0.62,0.02,0.03,Manuel Akanji,Bundesliga,D
+2,3.0,2017/2018,Borussia Dortmund,11,903,0,0,0.5,0.1,0.15+0.15,0.12+0.12,0.01,0.01,Manuel Akanji,Bundesliga,D
+3,,,,65,5418,1,1,0.35,0.17,1.33+0.33,1.21+0.21,0.02,0.02,Manuel Akanji,Bundesliga,D
+0,1.0,2019/2020,Borussia M.Gladbach,31,2717,1,3,0.5,1.19,1.95+0.95,4.17+1.17,0.06,0.14,Stefan Lainer,Bundesliga,D
+1,,,,31,2717,1,3,0.5,1.19,1.95+0.95,4.17+1.17,0.06,0.14,Stefan Lainer,Bundesliga,D
+0,1.0,2019/2020,RasenBallsport Leipzig,28,2360,0,1,0.5,0.34,1.72+1.72,1.09+0.09,0.07,0.04,Dayotchanculle Upamecano,Bundesliga,D
+1,2.0,2018/2019,RasenBallsport Leipzig,15,1292,0,0,0.7,0.21,1.00+1.00,0.07+0.07,0.07,0.0,Dayotchanculle Upamecano,Bundesliga,D
+2,3.0,2017/2018,RasenBallsport Leipzig,28,2261,3,0,0.4,0.32,1.64-1.36,0.37+0.37,0.07,0.01,Dayotchanculle Upamecano,Bundesliga,D
+3,4.0,2016/2017,RasenBallsport Leipzig,12,658,0,0,0.14,0.14,0.11+0.11,0.08+0.08,0.01,0.01,Dayotchanculle Upamecano,Bundesliga,D
+4,,,,83,6571,3,1,0.47,0.29,4.46+1.46,1.61+0.61,0.06,0.02,Dayotchanculle Upamecano,Bundesliga,D
+0,1.0,2019/2020,Hoffenheim,28,2327,0,0,0.97,0.19,2.48+2.48,0.67+0.67,0.1,0.03,Stefan Posch,Bundesliga,D
+1,2.0,2018/2019,Hoffenheim,17,1408,0,0,0.32,0.06,0.30+0.30,0.62+0.62,0.02,0.04,Stefan Posch,Bundesliga,D
+2,3.0,2017/2018,Hoffenheim,9,761,0,0,0.35,0.12,0.17+0.17,0.01+0.01,0.02,0.0,Stefan Posch,Bundesliga,D
+3,,,,54,4496,0,0,0.66,0.14,2.95+2.95,1.31+1.31,0.06,0.03,Stefan Posch,Bundesliga,D
+0,1.0,2019/2020,Augsburg,31,2722,8,6,1.19,1.95,3.46-4.54,5.47-0.53,0.11,0.18,Philipp Max,Bundesliga,D
+1,2.0,2018/2019,Augsburg,30,2581,4,2,0.84,2.16,2.47-1.53,6.27+4.27,0.09,0.22,Philipp Max,Bundesliga,D
+2,3.0,2017/2018,Augsburg,33,2961,2,12,0.55,2.34,0.82-1.18,8.87-3.13,0.02,0.27,Philipp Max,Bundesliga,D
+3,4.0,2016/2017,Augsburg,25,1820,1,2,0.84,1.34,0.61-0.39,4.64+2.64,0.03,0.23,Philipp Max,Bundesliga,D
+4,5.0,2015/2016,Augsburg,26,2083,0,0,0.35,0.69,0.27+0.27,1.93+1.93,0.01,0.08,Philipp Max,Bundesliga,D
+5,,,,145,12167,15,22,0.76,1.78,7.63-7.37,27.19+5.19,0.06,0.2,Philipp Max,Bundesliga,D
+0,1.0,2019/2020,RasenBallsport Leipzig,31,2655,3,1,0.41,0.54,3.49+0.49,3.35+2.35,0.12,0.11,Lukas Klostermann,Bundesliga,D
+1,2.0,2018/2019,RasenBallsport Leipzig,26,1995,5,1,0.59,0.9,2.03-2.97,1.99+0.99,0.09,0.09,Lukas Klostermann,Bundesliga,D
+2,3.0,2017/2018,RasenBallsport Leipzig,26,2200,1,0,0.45,0.61,1.05+0.05,1.60+1.60,0.04,0.07,Lukas Klostermann,Bundesliga,D
+3,4.0,2016/2017,RasenBallsport Leipzig,1,90,0,0,1.0,0.0,0.02+0.02,0.00,0.02,0.0,Lukas Klostermann,Bundesliga,D
+4,,,,84,6940,9,2,0.48,0.66,6.59-2.41,6.94+4.94,0.09,0.09,Lukas Klostermann,Bundesliga,D
+0,1.0,2019/2020,Fortuna Duesseldorf,29,2438,2,1,0.52,0.07,1.20-0.80,0.57-0.43,0.04,0.02,Andre Hoffmann,Bundesliga,D
+1,2.0,2018/2019,Fortuna Duesseldorf,13,1044,0,0,0.43,0.09,0.39+0.39,0.03+0.03,0.03,0.0,Andre Hoffmann,Bundesliga,D
+2,3.0,2015/2016,Hannover 96,8,520,0,0,0.87,0.35,0.14+0.14,0.39+0.39,0.02,0.07,Andre Hoffmann,Bundesliga,D
+3,,,,50,4002,2,1,0.54,0.11,1.73-0.27,0.99-0.01,0.04,0.02,Andre Hoffmann,Bundesliga,D
+0,1.0,2019/2020,Bayern Munich,28,2501,1,1,0.68,0.68,0.83-0.17,2.06+1.06,0.03,0.07,David Alaba,Bundesliga,D
+1,2.0,2018/2019,Bayern Munich,31,2533,3,3,1.67,1.03,2.96-0.04,5.00+2.00,0.11,0.18,David Alaba,Bundesliga,D
+2,3.0,2017/2018,Bayern Munich,23,1548,2,2,1.4,1.34,1.08-0.92,2.48+0.48,0.06,0.14,David Alaba,Bundesliga,D
+3,4.0,2016/2017,Bayern Munich,32,2508,4,4,1.15,1.22,1.99-2.01,4.40+0.40,0.07,0.16,David Alaba,Bundesliga,D
+4,5.0,2015/2016,Bayern Munich,30,2491,1,0,1.01,0.69,1.14+0.14,1.60+1.60,0.04,0.06,David Alaba,Bundesliga,D
+5,6.0,2014/2015,Bayern Munich,19,1666,1,1,1.46,1.24,1.21+0.21,2.67+1.67,0.07,0.14,David Alaba,Bundesliga,D
+6,,,,163,13247,12,11,1.2,1.0,9.20-2.80,18.20+7.20,0.06,0.12,David Alaba,Bundesliga,D
+0,1.0,2019/2020,Freiburg,28,2432,0,1,0.15,0.15,0.17+0.17,0.23-0.77,0.01,0.01,Dominique Heintz,Bundesliga,D
+1,2.0,2018/2019,Freiburg,34,3055,1,1,0.29,0.27,1.26+0.26,1.12+0.12,0.04,0.03,Dominique Heintz,Bundesliga,D
+2,3.0,2017/2018,FC Cologne,31,2790,1,0,0.26,0.26,0.36-0.64,1.00+1.00,0.01,0.03,Dominique Heintz,Bundesliga,D
+3,4.0,2016/2017,FC Cologne,32,2775,0,0,0.19,0.32,0.76+0.76,0.57+0.57,0.02,0.02,Dominique Heintz,Bundesliga,D
+4,5.0,2015/2016,FC Cologne,33,2873,2,0,0.38,0.13,0.84-1.16,0.15+0.15,0.03,0.0,Dominique Heintz,Bundesliga,D
+5,,,,158,13925,4,2,0.26,0.23,3.38-0.62,3.06+1.06,0.02,0.02,Dominique Heintz,Bundesliga,D
+0,1.0,2019/2020,Hertha Berlin,28,2442,4,1,0.59,0.07,2.02-1.98,0.85-0.15,0.07,0.03,Dedryck Boyata,Bundesliga,D
+1,2.0,2014/2015,Manchester City,2,91,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Dedryck Boyata,Bundesliga,D
+2,,,,30,2533,4,1,0.57,0.07,2.02-1.98,0.85-0.15,0.07,0.03,Dedryck Boyata,Bundesliga,D
+0,1.0,2019/2020,FC Cologne,28,2450,6,0,0.66,0.22,3.20-2.80,0.54+0.54,0.12,0.02,Sebastiaan Bornauw,Bundesliga,D
+1,,,,28,2450,6,0,0.66,0.22,3.20-2.80,0.54+0.54,0.12,0.02,Sebastiaan Bornauw,Bundesliga,D
+0,1.0,2019/2020,Schalke 04,31,2732,2,3,0.4,0.49,1.17-0.83,1.15-1.85,0.04,0.04,Jonjoe Kenny,Bundesliga,D
+1,2.0,2018/2019,Everton,10,791,0,1,0.34,0.68,0.09+0.09,0.84-0.16,0.01,0.1,Jonjoe Kenny,Bundesliga,D
+2,3.0,2017/2018,Everton,19,1585,0,1,0.17,0.57,0.18+0.18,1.72+0.72,0.01,0.1,Jonjoe Kenny,Bundesliga,D
+3,4.0,2016/2017,Everton,1,11,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Jonjoe Kenny,Bundesliga,D
+4,5.0,2015/2016,Everton,1,62,0,0,1.45,0.0,0.09+0.09,0.00,0.14,0.0,Jonjoe Kenny,Bundesliga,D
+5,,,,62,5181,2,5,0.33,0.54,1.52-0.48,3.72-1.28,0.03,0.06,Jonjoe Kenny,Bundesliga,D
+0,1.0,2019/2020,Borussia M.Gladbach,32,2622,1,0,0.31,0.03,0.67-0.33,0.05+0.05,0.02,0.0,Nico Elvedi,Bundesliga,D
+1,2.0,2018/2019,Borussia M.Gladbach,30,2629,2,1,0.48,0.1,2.07+0.07,0.88-0.12,0.07,0.03,Nico Elvedi,Bundesliga,D
+2,3.0,2017/2018,Borussia M.Gladbach,33,2916,2,2,0.49,0.62,2.10+0.10,2.04+0.04,0.06,0.06,Nico Elvedi,Bundesliga,D
+3,4.0,2016/2017,Borussia M.Gladbach,25,2115,0,0,0.26,0.43,0.39+0.39,0.65+0.65,0.02,0.03,Nico Elvedi,Bundesliga,D
+4,5.0,2015/2016,Borussia M.Gladbach,21,1547,0,2,0.17,0.29,0.27+0.27,0.72-1.28,0.02,0.04,Nico Elvedi,Bundesliga,D
+5,,,,141,11829,5,5,0.37,0.3,5.49+0.49,4.33-0.67,0.04,0.03,Nico Elvedi,Bundesliga,D
+0,1.0,2019/2020,Augsburg,31,2641,2,0,0.48,0.24,1.44-0.56,0.18+0.18,0.05,0.01,Tin Jedvaj,Bundesliga,D
+1,2.0,2018/2019,Bayer Leverkusen,16,1121,0,0,0.72,0.24,0.76+0.76,0.20+0.20,0.06,0.02,Tin Jedvaj,Bundesliga,D
+2,3.0,2017/2018,Bayer Leverkusen,10,600,0,0,0.75,0.3,0.21+0.21,0.10+0.10,0.03,0.02,Tin Jedvaj,Bundesliga,D
+3,4.0,2016/2017,Bayer Leverkusen,18,1424,1,0,0.7,0.06,1.32+0.32,0.12+0.12,0.08,0.01,Tin Jedvaj,Bundesliga,D
+4,5.0,2015/2016,Bayer Leverkusen,15,956,0,0,0.28,0.38,0.05+0.05,0.21+0.21,0.0,0.02,Tin Jedvaj,Bundesliga,D
+5,6.0,2014/2015,Bayer Leverkusen,22,1664,2,1,0.87,0.38,1.17-0.83,0.20-0.80,0.06,0.01,Tin Jedvaj,Bundesliga,D
+6,,,,112,8406,5,1,0.62,0.26,4.94-0.06,1.02+0.02,0.05,0.01,Tin Jedvaj,Bundesliga,D
+0,1.0,2019/2020,Borussia Dortmund,31,2588,1,3,0.77,0.31,1.49+0.49,2.11-0.89,0.05,0.07,Mats Hummels,Bundesliga,D
+1,2.0,2018/2019,Bayern Munich,21,1778,1,1,0.96,0.66,2.71+1.71,0.94-0.06,0.14,0.05,Mats Hummels,Bundesliga,D
+2,3.0,2017/2018,Bayern Munich,26,2213,1,1,1.1,0.33,1.72+0.72,0.28-0.72,0.07,0.01,Mats Hummels,Bundesliga,D
+3,4.0,2016/2017,Bayern Munich,27,2180,1,1,1.28,0.41,2.42+1.42,1.61+0.61,0.1,0.07,Mats Hummels,Bundesliga,D
+4,5.0,2015/2016,Borussia Dortmund,30,2496,2,2,0.4,0.25,1.58-0.42,0.66-1.34,0.06,0.02,Mats Hummels,Bundesliga,D
+5,6.0,2014/2015,Borussia Dortmund,24,2034,2,0,0.97,0.4,0.96-1.04,0.53+0.53,0.04,0.02,Mats Hummels,Bundesliga,D
+6,,,,159,13289,8,8,0.89,0.38,10.86+2.86,6.12-1.88,0.07,0.04,Mats Hummels,Bundesliga,D
+0,1.0,2019/2020,Paderborn,30,2670,1,2,0.64,0.64,1.90+0.90,1.19-0.81,0.06,0.04,Jamilu Collins,Bundesliga,D
+1,,,,30,2670,1,2,0.64,0.64,1.90+0.90,1.19-0.81,0.06,0.04,Jamilu Collins,Bundesliga,D
+0,1.0,2019/2020,Eintracht Frankfurt,31,2721,8,1,1.49,0.23,4.83-3.17,1.47+0.47,0.16,0.05,Martin Hinteregger,Bundesliga,D
+1,2.0,2018/2019,Augsburg,18,1580,2,0,0.97,0.4,1.03-0.97,0.62+0.62,0.06,0.04,Martin Hinteregger,Bundesliga,D
+2,3.0,2018/2019,Eintracht Frankfurt,14,1142,1,0,0.87,0.24,0.99-0.01,0.13+0.13,0.08,0.01,Martin Hinteregger,Bundesliga,D
+3,4.0,2017/2018,Augsburg,30,2650,0,0,0.88,0.27,1.49+1.49,0.40+0.40,0.05,0.01,Martin Hinteregger,Bundesliga,D
+4,5.0,2016/2017,Augsburg,31,2775,3,0,0.84,0.1,2.29-0.71,0.04+0.04,0.07,0.0,Martin Hinteregger,Bundesliga,D
+5,6.0,2015/2016,Borussia M.Gladbach,10,660,0,0,0.55,0.55,0.21+0.21,0.36+0.36,0.03,0.05,Martin Hinteregger,Bundesliga,D
+6,,,,134,11528,14,1,1.01,0.25,10.84-3.16,3.01+2.01,0.08,0.02,Martin Hinteregger,Bundesliga,D
+0,1.0,2019/2020,Bayer Leverkusen,33,2728,2,1,0.59,0.1,1.77-0.23,0.18-0.82,0.06,0.01,Sven Bender,Bundesliga,D
+1,2.0,2018/2019,Bayer Leverkusen,27,1999,0,0,0.63,0.14,0.64+0.64,0.19+0.19,0.03,0.01,Sven Bender,Bundesliga,D
+2,3.0,2017/2018,Bayer Leverkusen,29,2350,2,0,0.57,0.15,1.20-0.80,0.11+0.11,0.05,0.0,Sven Bender,Bundesliga,D
+3,4.0,2016/2017,Borussia Dortmund,6,273,0,1,0.66,0.33,0.08+0.08,0.05-0.95,0.03,0.02,Sven Bender,Bundesliga,D
+4,5.0,2015/2016,Borussia Dortmund,19,1246,0,0,0.22,0.58,0.63+0.63,0.76+0.76,0.05,0.06,Sven Bender,Bundesliga,D
+5,6.0,2014/2015,Borussia Dortmund,20,1249,0,0,0.36,0.79,0.12+0.12,0.90+0.90,0.01,0.06,Sven Bender,Bundesliga,D
+6,,,,134,9845,4,2,0.52,0.27,4.44+0.44,2.19+0.19,0.04,0.02,Sven Bender,Bundesliga,D
+0,1.0,2019/2020,Fortuna Duesseldorf,31,2734,2,3,0.95,0.63,2.36+0.36,2.42-0.58,0.08,0.08,Kaan Ayhan,Bundesliga,D
+1,2.0,2018/2019,Fortuna Duesseldorf,28,2456,4,1,0.84,0.22,3.36-0.64,0.65-0.35,0.12,0.02,Kaan Ayhan,Bundesliga,D
+2,3.0,2015/2016,Eintracht Frankfurt,2,80,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Kaan Ayhan,Bundesliga,D
+3,4.0,2015/2016,Schalke 04,1,1,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Kaan Ayhan,Bundesliga,D
+4,5.0,2014/2015,Schalke 04,15,955,0,0,0.47,0.28,0.14+0.14,0.35+0.35,0.01,0.03,Kaan Ayhan,Bundesliga,D
+5,,,,77,6226,6,4,0.82,0.4,5.87-0.13,3.42-0.58,0.08,0.05,Kaan Ayhan,Bundesliga,D
+0,1.0,2019/2020,Bayern Munich,32,2788,5,4,0.77,0.61,1.89-3.11,3.50-0.50,0.06,0.11,Benjamin Pavard,Bundesliga,D
+1,2.0,2018/2019,VfB Stuttgart,29,2610,0,0,0.41,0.38,0.41+0.41,0.76+0.76,0.01,0.03,Benjamin Pavard,Bundesliga,D
+2,3.0,2017/2018,VfB Stuttgart,34,3060,1,0,0.32,0.24,0.64-0.36,1.18+1.18,0.02,0.03,Benjamin Pavard,Bundesliga,D
+3,4.0,2015/2016,Lille,13,636,0,0,0.42,0.57,0.12+0.12,0.20+0.20,0.02,0.03,Benjamin Pavard,Bundesliga,D
+4,5.0,2014/2015,Lille,8,504,0,0,0.71,0.18,0.08+0.08,0.05+0.05,0.02,0.01,Benjamin Pavard,Bundesliga,D
+5,,,,116,9598,6,4,0.51,0.4,3.14-2.86,5.69+1.69,0.03,0.05,Benjamin Pavard,Bundesliga,D
+0,1.0,2019/2020,Borussia M.Gladbach,31,2782,1,1,0.55,0.26,2.12+1.12,1.56+0.56,0.07,0.05,Matthias Ginter,Bundesliga,D
+1,2.0,2018/2019,Borussia M.Gladbach,27,2379,2,0,0.83,0.34,1.61-0.39,0.89+0.89,0.06,0.03,Matthias Ginter,Bundesliga,D
+2,3.0,2017/2018,Borussia M.Gladbach,34,3060,5,2,0.79,0.21,3.79-1.21,1.14-0.86,0.11,0.03,Matthias Ginter,Bundesliga,D
+3,4.0,2016/2017,Borussia Dortmund,29,2474,0,1,0.73,0.29,1.48+1.48,0.86-0.14,0.05,0.03,Matthias Ginter,Bundesliga,D
+4,5.0,2015/2016,Borussia Dortmund,24,1893,3,4,0.81,1.0,1.73-1.27,3.03-0.97,0.08,0.14,Matthias Ginter,Bundesliga,D
+5,6.0,2014/2015,Borussia Dortmund,14,840,0,1,1.5,0.43,0.42+0.42,0.59-0.41,0.04,0.06,Matthias Ginter,Bundesliga,D
+6,,,,159,13428,11,9,0.78,0.38,11.13+0.13,8.06-0.94,0.07,0.05,Matthias Ginter,Bundesliga,D
+0,1.0,2019/2020,Schalke 04,34,3011,0,5,0.27,1.26,0.25+0.25,2.87-2.13,0.01,0.09,Bastian Oczipka,Bundesliga,D
+1,2.0,2018/2019,Schalke 04,21,1877,1,5,0.62,2.16,0.37-0.63,4.18-0.82,0.02,0.2,Bastian Oczipka,Bundesliga,D
+2,3.0,2017/2018,Schalke 04,29,2318,0,1,0.58,2.14,0.90+0.90,3.94+2.94,0.03,0.15,Bastian Oczipka,Bundesliga,D
+3,4.0,2016/2017,Eintracht Frankfurt,33,2954,1,4,0.34,1.13,0.29-0.71,3.25-0.75,0.01,0.1,Bastian Oczipka,Bundesliga,D
+4,5.0,2015/2016,Eintracht Frankfurt,30,2700,0,0,0.33,0.73,0.37+0.37,1.90+1.90,0.01,0.06,Bastian Oczipka,Bundesliga,D
+5,6.0,2014/2015,Eintracht Frankfurt,30,2571,1,4,0.39,1.54,0.32-0.68,2.80-1.20,0.01,0.1,Bastian Oczipka,Bundesliga,D
+6,,,,177,15431,3,19,0.4,1.43,2.49-0.51,18.93-0.07,0.01,0.11,Bastian Oczipka,Bundesliga,D
+0,1.0,2019/2020,Union Berlin,31,2790,2,0,0.9,0.06,1.88-0.12,0.05+0.05,0.06,0.0,Marvin Friedrich,Bundesliga,D
+1,2.0,2015/2016,Schalke 04,2,3,0,0,0.0,0.0,0.00,0.00,0.0,0.0,Marvin Friedrich,Bundesliga,D
+2,3.0,2014/2015,Schalke 04,5,242,0,0,1.12,0.0,0.18+0.18,0.00,0.07,0.0,Marvin Friedrich,Bundesliga,D
+3,,,,38,3035,2,0,0.92,0.06,2.06+0.06,0.05+0.05,0.06,0.0,Marvin Friedrich,Bundesliga,D
+0,1.0,2019/2020,Mainz 05,33,2970,1,2,0.36,0.36,1.05+0.05,0.89-1.11,0.03,0.03,Moussa Niakhate,Bundesliga,D
+1,2.0,2018/2019,Mainz 05,33,2788,1,1,0.32,0.32,1.89+0.89,0.45-0.55,0.06,0.01,Moussa Niakhate,Bundesliga,D
+2,3.0,2017/2018,Metz,35,3102,0,1,0.52,0.15,0.99+0.99,0.19-0.81,0.03,0.01,Moussa Niakhate,Bundesliga,D
+3,,,,101,8860,2,4,0.41,0.27,3.94+1.94,1.52-2.48,0.04,0.02,Moussa Niakhate,Bundesliga,D
