@@ -3,6 +3,18 @@ setup:
 build:
   packages:
     - gdal-bin
+    -libgdal-grass 
+    -python-gdal 
+    -geotiff-bin 
+    -libgeotiff-epsg 
+    -libhdf4-doc
+    -libhdf4-alt-dev 
+    -hdf4-tools 
+    -libmyodbc 
+    -odbc-postgresql 
+    -tdsodbc 
+    -unixodbc-bin
+    -ogdi-bin
   languages:
     - python
 run:
