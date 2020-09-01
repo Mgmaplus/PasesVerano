@@ -1,0 +1,10 @@
+setup:
+  config: {}
+build:
+  languages:
+    - >-
+      https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku-community/apt.tgz
+    - 'https://github.com/cyberdelia/heroku-geo-buildpack.git'
+    - python
+run:
+  web: sh setup.sh && streamlit run crunch.py
