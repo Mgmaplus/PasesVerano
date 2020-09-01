@@ -1,9 +1,10 @@
 setup:
   config: {}
 build:
+  packages:
+    - gdal-bin
   languages:
-    - >-
-      https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku-community/apt.tgz
+    - 'https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku-community/apt.tgz'
     - 'https://github.com/cyberdelia/heroku-geo-buildpack.git'
     - python
 run:
