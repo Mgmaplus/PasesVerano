@@ -4,7 +4,6 @@ build:
   packages:
     - gdal-bin
   languages:
-    - 'https://github.com/cyberdelia/heroku-geo-buildpack.git'
     - python
 run:
   web: sh setup.sh && streamlit run crunch.py
