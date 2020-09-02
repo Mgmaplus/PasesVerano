@@ -700,8 +700,7 @@ def main():
     # Create the Figure object "p2"
 
     p2 = figure(plot_width= 810, plot_height=400, title = 'SENTIMENT ANALYSIS: TWEETS DEL JUGADOR POR PAIS',
-            toolbar_location=None, tools=['hover', 'pan', 'wheel_zoom'],
-            active_scroll='wheel_zoom', tooltips='@country: @count')
+            toolbar_location=None, tools=['hover', 'pan'], tooltips='@country: @count')
 
     p2.multi_polygons(xs='xs', ys='ys', fill_color=cmap , source=s3)
 
@@ -778,8 +777,15 @@ def main():
 
     widget = row(select1,select2)
 
-    layout = row(column(widget, p, dot), column(p1, p2,button))
-    st.bokeh_chart(layout)  
+    layout = row(column(p1, p2))
+    
+    st.title('Fútbol de Europa: Evaluando Pases de Verano (Posibles y Completados)')
+    st.header('Jugadores vs el promedio')
+    st.markdown(' El promedio se basa en la posición del jugador en su respectiva liga. Como')
+    st.bokeh_chart(row(column(widget, p),dot))  
+    st.header('Análisis de Sentiment basado en Tweets acerca del Jugador')
+    st.boke_chart(layout)
+
 
 if __name__ == '__main__':
     main()
