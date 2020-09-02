@@ -686,7 +686,7 @@ def main():
     xdr = FactorRange(factors=data_src.data['x'])
     ydr = Range1d(start = -.3, end = 1)
 
-    p1 = figure(plot_width=600, plot_height=340, title = 'SENTIMENT ANALYSIS: TWEETS DEL JUGADOR EN TEMPORADA DE TRANSFERENCIAS', x_range=xdr, y_range = ydr, 
+    p1 = figure(plot_width=630, plot_height=340, title = 'TWEETS DEL JUGADOR: VALORES SENTIMENT DURANTE MERCADO DE PASES', x_range=xdr, y_range = ydr, 
             x_axis_label='FECHA', y_axis_label='SENTIMENT SCORE', toolbar_location=None)
 
     ###p2
@@ -780,12 +780,12 @@ def main():
     layout = row(column(p1, p2))
     
     st.title('Fútbol de Europa: Evaluando Pases de Verano (Posibles y Completados)')
-    st.header('Jugadores vs el promedio')
-    st.markdown(' El promedio se basa en la posición del jugador en su respectiva liga. Como')
-    st.bokeh_chart(row(column(widget, p),dot))  
+    st.header('Contrastando con el promedio')
+    st.bokeh_chart(column(widget, p))  
+    st.markdown(' El promedio es el polígono de color rosa que muestra las estadíticas de los jugadores con las que el jugador comparte posición y liga (+500 min en la temporada 19/20)')
+    st.bokeh_chart(column(dot)) 
     st.header('Análisis de Sentiment basado en Tweets acerca del Jugador')
-    st.boke_chart(layout)
-
+    st.bokeh_chart(layout)
 
 if __name__ == '__main__':
     main()
