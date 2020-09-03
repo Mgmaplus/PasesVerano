@@ -785,6 +785,9 @@ def main():
     p1.toolbar.active_drag = None
     p1.toolbar.active_scroll = None
 
+    p2.toolbar.active_drag = None
+    p2.toolbar.active_scroll = None
+
     widget = row(select1,select2)
     
     st.title('Fútbol de Europa: Evaluando los Posibles y Completados Pases de Verano 2020')
@@ -800,7 +803,7 @@ def main():
     text2 = Paragraph(text = """
     """,width=200, height=50)
     text3 = Paragraph(text = """ Se puede pulsar el país para conocer el número de tweets provenientes de aquel país.
-    """,width=200, height=50)
+    """,width=800, height=50)
     st.bokeh_chart(column(widget, p, text, texta, textb, dot, text1, p1, text2, p2, text3))
 
 if __name__ == '__main__':
