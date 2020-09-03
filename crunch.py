@@ -792,19 +792,19 @@ def main():
     
     st.title('Fútbol de Europa: Evaluando los Posibles y Completados Pases de Verano 2020')
     st.header('Contrastando con el promedio')  
-    text = Paragraph(text="""El polígono de color rosa es el promedio. Estadíticas de los jugadores con las que el jugador comparte posición y liga (+500 min).""",
+    text = Paragraph(text="""El polígono de color rosa es el promedio y muestra estadíticas agregadas de los jugadores con las que el jugador comparte posición y liga (con +500 min).
+    El azul muestra las estadíticas del jugador.""",
     width=900, height=25)
-    texta = Paragraph(text="""El azul muestra las estadíticas del jugador.""", width=700, height=20)
     textb = Paragraph(text="""
     Min=  Minutos/1000 ----- SH90=  Tiros por 90 min ----- KP90 = Pases claves por 90 min ----- xG, xA, xG90, xA90 = Valores esperados""", 
     width = 1000, height = 50)
-    text1 = Paragraph(text = """ Se muestra un valor deseado si la diferencia es negativa, entre el valor esperado y las asistencias o goles realizados (durante la temporada 19/20).
+    text1 = Paragraph(text = """ Se muestra un valor deseado si la diferencia es negativa, entre el valor esperado y las asistencias o goles realizados en la temporada 19/20.
     """,width=1000, height=90)
     text2 = Paragraph(text = """
     """,width=200, height=50)
     text3 = Paragraph(text = """ Se puede pulsar el país para conocer el número de tweets provenientes de aquel país.
     """,width=800, height=50)
-    st.bokeh_chart(column(widget, p, text, texta, textb, dot, text1, p1, text2, p2, text3))
+    st.bokeh_chart(column(widget, p, text, textb, dot, text1, p1, text2, p2, text3))
 
 if __name__ == '__main__':
     main()
