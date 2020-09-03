@@ -794,7 +794,7 @@ def main():
     st.header('Contrastando con el promedio')  
     text = Paragraph(text="""El polígono de color rosa es el promedio y muestra estadíticas agregadas de los jugadores con las que el jugador comparte posición y liga (con +500 min).
     El azul muestra las estadíticas del jugador.""",
-    width=900, height=25)
+    width=910, height=25)
     textb = Paragraph(text="""
     Min=  Minutos/1000 ----- SH90=  Tiros por 90 min ----- KP90 = Pases claves por 90 min ----- xG, xA, xG90, xA90 = Valores esperados""", 
     width = 1000, height = 50)
