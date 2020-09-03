@@ -78,7 +78,7 @@ def main():
     from bokeh.palettes import RdBu3, Blues8
     from bokeh.transform import factor_cmap, cumsum, linear_cmap
     from bokeh.models.annotations import Title
-    from bokeh.models.widgets import Paragraph
+    from bokeh.models.widgets import Paragraph, Div
 
     metrics = 7
 
@@ -675,7 +675,7 @@ def main():
     src_del = ColumnDataSource(src_delta)
 
 
-    dot = figure(plot_width=720, plot_height=220, title = 'BALANCE DE GOLES & ASISTENCIAS', toolbar_location = None, x_range = [-2.2,3], y_range = src_delta['factors'])
+    dot = figure(plot_width=720, plot_height=220, title = 'BALANCE DE GOLES & ASISTENCIAS DEL JUGADOR', toolbar_location = None, x_range = [-2.2,3], y_range = src_delta['factors'])
 
     dot.segment('x0', 'factors', 'x', 'factors', line_color = 'colo', line_width = 4, source = src_del)
 
@@ -687,7 +687,7 @@ def main():
     xdr = FactorRange(factors=data_src.data['x'])
     ydr = Range1d(start = -.3, end = 1)
 
-    p1 = figure(plot_width=630, plot_height=340, title = 'TWEETS DEL JUGADOR: SENTIMENT (VALOR) DURANTE MERCADO DE PASES', x_range=xdr, y_range = ydr, 
+    p1 = figure(plot_width=630, plot_height=340, title = 'TWEETS SOBRE EL JUGADOR: SENTIMENT (VALOR) DURANTE MERCADO DE PASES', x_range=xdr, y_range = ydr, 
             x_axis_label='FECHA', y_axis_label='SENTIMENT SCORE', toolbar_location=None)
 
     ###p2
@@ -700,7 +700,7 @@ def main():
 
     # Create the Figure object "p2"
 
-    p2 = figure(plot_width= 810, plot_height=400, title = 'LOS TWEETS DEL JUGADOR POR PAIS',
+    p2 = figure(plot_width= 810, plot_height=400, title = 'LOS TWEETS SOBRE EL JUGADOR POR PAIS',
             toolbar_location=None, tools=['hover', 'pan'], tooltips='@country: @count')
 
     p2.multi_polygons(xs='xs', ys='ys', fill_color=cmap , source=s3)
@@ -776,17 +776,32 @@ def main():
     p2.axis.visible = False
     p2.grid.grid_line_color = None
 
+    p.toolbar.active_drag = None
+    p.toolbar.active_scroll = None
+
+    dot.toolbar.active_drag = None
+    dot.toolbar.active_scroll = None
+
+    p1.toolbar.active_drag = None
+    p1.toolbar.active_scroll = None
+
     widget = row(select1,select2)
     
-    st.title('Fútbol de Europa: Evaluando Pases de Verano (Posibles y Completados)')
+    st.title('Fútbol de Europa: Evaluando los Posibles y Completados Pases de Verano 2020')
     st.header('Contrastando con el promedio')  
-    text = Paragraph(text="""El promedio o el polígono de color rosa, muestra las estadíticas de los jugadores con las que el jugador comparte posición y liga (+500 min en la temporada 19/20)""",
-    width=700, height=70)
-    text1 = Paragraph(text = """
-    """,width=200, height=90)
+    text = Paragraph(text="""El polígono de color rosa es el promedio. Estadíticas de los jugadores con las que el jugador comparte posición y liga (+500 min).""",
+    width=900, height=25)
+    texta = Paragraph(text="""El azul muestra las estadíticas del jugador.""", width=700, height=20)
+    textb = Paragraph(text="""
+    Min=  Minutos/1000 ----- SH90=  Tiros por 90 min ----- KP90 = Pases claves por 90 min ----- xG, xA, xG90, xA90 = Valores esperados""", 
+    width = 1000, height = 50)
+    text1 = Paragraph(text = """ Se muestra un valor deseado si la diferencia es negativa, entre el valor esperado y las asistencias o goles realizados (durante la temporada 19/20).
+    """,width=1000, height=90)
     text2 = Paragraph(text = """
     """,width=200, height=50)
-    st.bokeh_chart(column(widget, p, text, dot, text1, p1, text2, p2))
+    text3 = Paragraph(text = """ Se puede pulsar el país para conocer el número de tweets provenientes de aquel país.
+    """,width=200, height=50)
+    st.bokeh_chart(column(widget, p, text, texta, textb, dot, text1, p1, text2, p2, text3))
 
 if __name__ == '__main__':
     main()
