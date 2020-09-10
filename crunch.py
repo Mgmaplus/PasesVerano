@@ -1021,7 +1021,7 @@ def main():
     
     st.bokeh_chart(ana2)
      ###tablaestrellas
-    recomendaciones = {'Recomendación (1-5): ['5', '4.5', '4', '3.5', '3', '2.5'],
+    recomendaciones = {'Recomendación (1-5)': ['5', '4.5', '4', '3.5', '3', '2.5'],
                        'Valor en millones (€)' : [' > 125 ', '90 - 125', '60 - 89', '40 - 59', '20  - 39', '< 20']}
     estrellas = pd.DataFrame(recomendaciones)
     st.table(estrellas)
