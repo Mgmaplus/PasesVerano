@@ -999,17 +999,17 @@ def main():
     st.header('Valoraciones')
     ana1 = Paragraph(text="""
     De por sí algunos de los datos ya hablan por si solos. Nos apoyan en nuestras creencias acerca de estos jugadores o cuestionan y terminan ayudándonos a reformular nuestras opiniones.
-    Por ejemplo, se puede decir que Jack Grealish, Ferran Torres, Adama Traoré o Kai Havertz son jugadores que están rindiendo a gran nivel dentro de sus ligas y al mismo tiempo son demandados por los aficionados.
-    Con las métricas, estádisticas y los datos recolectados se puede analizar y poner en uso estos para crear una evaluación de sus valoraciones en el mercado. Para esto utilizamos un sistema de valoración ponderado y poder asignar a cada jugador una categoría dentro de un sistema de recomendación en base a 5 estrellas.
+    Por ejemplo, se puede decir que Jack Grealish, Ferrán Torres, Adama Traoré o Kai Havertz son jugadores que están rindiendo a gran nivel dentro de sus ligas y al mismo tiempo son demandados por los aficionados.
+    Con las métricas, estádisticas y los datos recolectados se puede analizar y poner en uso estos para crear una evaluación de sus valoraciones en el mercado. Para esto utilizamos un sistema de valoración ponderado y poder asignar a cada jugador una categoría dentro de un sistema de recomendación.
     Los factores a evaluar serán: nivel de juego sobre el promedio de la liga, balance de los valores esperados, el nivel de la liga donde jugo la última temporada el jugador, estimación por parte de los fans según el "sentiment value" de los tweets, el nivel del equipo donde compitío el jugador en la última temporada y el sistema por último considera la edad del jugador.
-    Cada factor tiene un peso diferente en sistema de recomendación que se describe en este cuadro.
+    Cada factor es ponderado y representa un peso diferente que se describe en este cuadro.
     """,
     width=650, height=210)
     st.bokeh_chart(ana1)
     ###tablaponde
     contenido = {'Categorías': ['Nivel de juego', 'Balance de valores esperados', 'Nivel de la liga', 'Estimación por fans',  'Nivel del club', 'Edad'], 
                  'Descripción': ['Se considera el número de métricas del jugador que están por encima del promedio.', 'Se toma en cuenta la diferencia en los balances si es deseada y la magnitud. (xG - Goles y xA - Asistencias)', 'De escala 1-10 se evalua el nivel de la liga donde el jugador jugo la última temporada.', 'El sentiment value de los tweets sobre el jugador (promedio por día).', "De escala 1-10 se evalua el nivel del club donde el jugador jugo la última temporada.", "La edad del jugador." ],
-                 "Valores": ['45%', '30%', "10%", "5%", "5%", "5%"]}
+                 "Valor": ['45%', '30%', "10%", "5%", "5%", "5%"]}
     factores = pd.DataFrame(contenido)
     st.table(factores)
 
@@ -1021,7 +1021,7 @@ def main():
     
     st.bokeh_chart(ana2)
      ###tablaestrellas
-    recomendaciones = {'Recomendación': ['5', '4.5', '4', '3.5', '3', '2.5'],
+    recomendaciones = {'Recomendación (1-5): ['5', '4.5', '4', '3.5', '3', '2.5'],
                        'Valor en millones (€)' : [' > 125 ', '90 - 125', '60 - 89', '40 - 59', '20  - 39', '< 20']}
     estrellas = pd.DataFrame(recomendaciones)
     st.table(estrellas)
@@ -1029,7 +1029,7 @@ def main():
     st.header('Resultados') 
 
     ana3 = Paragraph(text="""
-    Con las condiciones del sistemad de recomendación ponderado podemos evaluar a los jugadores y su valor de mercado de forma objetiva y dentro de un mismo marco de evaluación. Los resultados del sistema de ponderación se encuentran en la columna "Recomendación" y "Valor aprox en millones".
+    Cumpliendo las condiciones del sistema de recomendación ponderado podemos evaluar a los jugadores y su valor de mercado de forma objetiva y dentro de un mismo marco de evaluación. Los resultados del sistema de ponderación se encuentran en la columna "Recomendación" y "Valor aprox en millones".
     """,
     width=630, height=80)
     st.bokeh_chart(ana3)
@@ -1037,27 +1037,28 @@ def main():
 
     contenido = {'Jugador': ['Jack Grealish', 'Adama Traoré', 'Ismaila Sarr', 'Raul Jimenez', 'Houssem Aouar', 'Victor Osimhen', 'Edison Cavani', 'Kai Havertz', 'David Alaba', 'Ferran Torres', 'Lionel Messi', 'Gianluigi Donnarumma'],
                  "Edad" : ['24', '24', '22', '29', '22', '21', '33', '21', '28', '20', '33', '21'],
-                 "Equipo (2020/2021)" : ['Aston Villa', 'Wolverhampton', 'Watford', 'Wolverhampton', 'Olympique Lyonnais', 'Napoli', 'Free', 'Chelsea', 'Bayern Munich', 'Manchester City', 'Barcelona', ' AC Milan'],
+                 "Equipo (2020/2021)" : ['Aston Villa', 'Wolverhampton', 'Watford F.C.', 'Wolverhampton', 'Olympique Lyonnais', 'SSC Napoli', 'Free', 'Chelsea F.C.', 'Bayern Munich', 'Manchester City', 'Barcelona', ' AC Milan'],
                  "Valor aprox en millones (€)": ['40', '35', '24.5', '40', '49.5', '70', '20', '80', '65', '27', '112', '60'],
                  "Recomendación" : ['3.5', '3', '2.5','3.5','3','3','2.5','4.5','3','3','5','4.5'],
                  "Valor estimado (sistema de recomendación)":["40-59 millones", "20-39 millones", " 20 millones > ", "40-59 millones", "20-39 millones", "20-39 millones", " 20 millones > ", "90-124 millones", "20-39 millones","20-39 millones"," 125 millones < ", "90-124 millones"],
-                 "Estado" : ['valor justo', 'valor justo', "sobrevalorado", "valor justo", "sobrevalorado", "sobrevalorado", "sobrevalorado", "subestimado", "sobrevalorado", "valor justo", "subestimado", "subestimado"]}
+                 "Estado" : ['Valor justo', 'Valor justo', "Sobrevalorado", "Valor justo", "Sobrevalorado", "Sobrevalorado", "Sobrevalorado", "Subestimado", "Sobrevalorado", "Valor justo", "Subestimado", "Subestimado"]}
     
     recomendacion = pd.DataFrame(contenido)
 
     st.table(recomendacion)
 
     ana4 = Paragraph(text="""
+    
     El análisis nos permite observar que un poco más del 40% de los posibles o completados pases de verano que observamos están sobrevalorados. Puede ser una indicación de que los precios de mercado estaban en un pico.
-    Es posible que parte de los jugadores observados fueron causa de rumores de traspaso previo a la pandemia que condicionó a muchos clubes a esperar a negociar en futuros escenarios y obtener un mayor poder de negociación.
+    Es posible que parte de los jugadores observados fueron causa de rumores de traspaso previo a la pandemia que condicionó a los clubes a reconsiderar para negociar con un mayor poder de negociación en futuras ventanas de traspasos.
     Podemos ver en el caso particular de Victor Osimhen donde su transferencia incluso ha sido la cifra record del Napoli, como una indicación de que el mercado mantuvo su característica de valores pico con una alta competencia para un grupo selectivo de jugadores.
     Siendo la muestra seleccionada para este análisis también selectiva donde el objetivo era evaluar en base a varios factores incluyendo los tweets sobre los jugadores,
     se debe tomar en cuenta el rendimiento del mercado de pases fuera de este contexto para sacar mejores conclusiones donde vemos que el mercado de traspasos de por sí se redujo y varias de las posibles transferencias pasaron a ser solo rumores. 
     En este análisis 3 de cada 4 jugadores no han llegado a ser traspasados y la transferencias de solo 1 de los 3 jugadores subestimados o 1 de los 4 jugadores con precio justo han sido completadas.
-    Como observación sobre el 'sentiment value' de los tweets, se conoce que estos por lo general tienen un valor neutral ( 4.393 de los 6.042 tweets observados o 73% de los tweets ) y no tienen una magnitud o impacto significante durante el mercado de traspasos. Puede ser un mejor uso al analizar la magnitud del 'sentiment value' en casos o acciones individuales donde el período de recolección es de corta duración.
+    Como observación sobre el 'sentiment value' de los tweets, se conoce que estos por lo general tienen un valor neutral, donde 4.393 de los 6.042 tweets observados o 73% de los tweets obtuiveron un valor de 0 y no tienen una magnitud o impacto significante durante el mercado de traspasos. Puede ser un mejor uso el 'sentiment value' al analizar su magnitud en casos o acciones individuales donde el período de recolección de tweets es de corta duración (10-30 horas).
 
     """,
-    width=630, height=80)
+    width=630, height=150)
     st.bokeh_chart(ana4)
 
 
