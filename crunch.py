@@ -1031,7 +1031,7 @@ def main():
     ana3 = Paragraph(text="""
     Cumpliendo las condiciones del sistema de recomendación ponderado podemos evaluar a los jugadores y su valor de mercado de forma objetiva y dentro de un mismo marco de evaluación. Los resultados del sistema de ponderación se encuentran en la columna "Recomendación" y "Valor aprox en millones".
     """,
-    width=630, height=80)
+    width=670, height=80)
     st.bokeh_chart(ana3)
     ###tablarecomendaciones
 
@@ -1048,7 +1048,7 @@ def main():
     st.table(recomendacion)
 
     ana4 = Paragraph(text="""
-    
+
     El análisis nos permite observar que un poco más del 40% de los posibles o completados pases de verano que observamos están sobrevalorados. Puede ser una indicación de que los precios de mercado estaban en un pico.
     Es posible que parte de los jugadores observados fueron causa de rumores de traspaso previo a la pandemia que condicionó a los clubes a reconsiderar para negociar con un mayor poder de negociación en futuras ventanas de traspasos.
     Podemos ver en el caso particular de Victor Osimhen donde su transferencia incluso ha sido la cifra record del Napoli, como una indicación de que el mercado mantuvo su característica de valores pico con una alta competencia para un grupo selectivo de jugadores.
@@ -1058,7 +1058,7 @@ def main():
     Como observación sobre el 'sentiment value' de los tweets, se conoce que estos por lo general tienen un valor neutral, donde 4.393 de los 6.042 tweets observados o 73% de los tweets obtuiveron un valor de 0 y no tienen una magnitud o impacto significante durante el mercado de traspasos. Puede ser un mejor uso el 'sentiment value' al analizar su magnitud en casos o acciones individuales donde el período de recolección de tweets es de corta duración (10-30 horas).
 
     """,
-    width=630, height=150)
+    width=670, height=150)
     st.bokeh_chart(ana4)
 
 
