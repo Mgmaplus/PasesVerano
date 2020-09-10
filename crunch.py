@@ -9,14 +9,22 @@ def main():
     
     dfs = ['defenders_bundesliga.csv', 'forwards_bundesliga.csv', 
            'forwards_epl.csv', 'forwards_ligue1.csv', 'midfielders_epl.csv', 
-           'midfielders_ligue1.csv']
-
+           'midfielders_ligue1.csv', 'midfielders_laliga.csv', 'forwards_laliga.csv']
+    
     data = pd.DataFrame(columns = ['№', 'Season', 'Team', 'Apps', 'Min', 'G', 'A', 'Sh90', 'KP90', 'xG',
        'xA', 'xG90', 'xA90', 'Player', 'League', 'Pos'])
     for file in dfs:
         temp = pd.read_csv(file)
         temp.drop('Unnamed: 0', axis = 1, inplace = True)
         data = data.append(temp)
+
+    files = ['porteros_serieA.csv', 'porteros1_serieA.csv']
+    serie_a = pd.read_csv(files[0])
+    merge = pd.read_csv(files[1])
+    serie_a = serie_a.merge(merge, on = 'Player')
+    serie_a.drop(['Rk_x', 'Rk_y','Nation_x','Nation_y', 'Pos_x', 'Pos_y', 'Squad_x', 'Squad_y', 'Age_x', 'Age_y', 'Born_x', 'Born_y', 'GA_x','GA_y', 'PKA_x', 'PKA_y', 'Matches_x', 'Matches_y',],
+                axis = 1, inplace = True )
+    serie_a['Player'] = serie_a['Player'].apply(lambda x: x.split('\\')[0]) 
 
     data.dropna(axis = 0, inplace = True)
     data.reset_index(inplace = True)
@@ -57,15 +65,20 @@ def main():
     y = data['xA'].apply(lambda x: split(x))
     data['xA'] = [x[0] for x in y]
     data['deltaXA'] = [x[1] for x in y]
-    data['Min'] = data['Min'] / 1000
+    data['Min'] = data['Min'] / 90
 
     data[['Apps', 'G', 'A']] = data[['Apps', 'G', 'A']].astype(int)
+    
+    data.loc[('Lionel Messi', '2018/2019'), 'xG'] = '26.0'
+    data.loc[('Lionel Messi', '2018/2019'),'deltaXG'] = '-10.0' 
+    data.loc[('Lionel Messi', '2016/2017'), 'xG'] = '26.89' 
+    data.loc[('Lionel Messi', '2016/2017'),'deltaXG'] = '-10.11' 
 
-    data[['Min','xG', 'xA', 'deltaXG', 'deltaXA']] = data[['Min','xG', 'xA', 'deltaXG', 'deltaXA']].astype(float)
-
+    data[['Min','xG','xA','deltaXG', 'deltaXA']] = data[['Min','xG','xA','deltaXG', 'deltaXA']].astype(float)
+    
 
     transfers = ['David Alaba', 'Raúl Jiménez','Ismaila Sarr', 'Houssem Aouar', 'Victor Osimhen', 
-            'Edinson Cavani', 'Jack Grealish', 'Adama Traoré','Kai Havertz']
+            'Edinson Cavani', 'Jack Grealish', 'Adama Traoré','Kai Havertz', 'Ferrán Torres', 'Lionel Messi']
 
     ###Plotting performance pentagons
     ### Min , Sh90, KP90, xG, xA, XG90, XA90, deltaXG, deltaXA 
@@ -139,8 +152,29 @@ def main():
     text = ['Min', 'xA90', 'xG90', 'xA', 'xG', 'KP90', 'Sh90', '']
 
     ### labels scales p.multi_lines
-    scale1 = data[data['Min'] >=.5].groupby(['League','Pos']).max()[['Min','Sh90','KP90','xG','xA','xG90','xA90']].reset_index()
- 
+    scale1 = data[data['Min'] >=5.55].groupby(['League','Pos']).max()[['Min','Sh90','KP90','xG','xA','xG90','xA90']].reset_index()
+
+    #Gianluigi
+    serie_a['Penales_per'] = serie_a['PKsv'] / serie_a['PKatt'] *100
+    scale_por = serie_a[serie_a['90s'] >= 5.55].max()[['90s','PSxG','FK','AvgLen','GA90','Penales_per', 'CS%']]
+
+    scale_75 = scale_por * .75
+    labels75_g = [f"{num:.1f}" for num in scale_75] 
+    item1 = labels75_g[0]
+    labels75_g.reverse()
+    labels75_g = [item1] + labels75_g[0:6] + ['']
+    scale_50 = scale_por * .50
+    labels50_g = [f"{num:.1f}" for num in scale_50] 
+    item1 = labels50_g[0]
+    labels50_g.reverse()
+    labels50_g = [item1] + labels50_g[0:6] + ['']
+    scale_25 = scale_por * .25
+    labels25_g = [f"{num:.1f}" for num in scale_25]
+    item1 = labels25_g[0]
+    labels25_g.reverse()
+    labels25_g = [item1] + labels25_g[0:6] + ['']
+
+
 
     # Jack Grealish
     scale_75 = scale1.loc[3][2:] * .75
@@ -178,17 +212,17 @@ def main():
 
 
     # Houssem
-    scale_75 = scale1.loc[5][2:] *.75
+    scale_75 = scale1.loc[7][2:] *.75
     labels75_3 = [f"{num:.1f}" for num in scale_75] 
     item1 = labels75_3[0]
     labels75_3.reverse()
     labels75_3 = [item1] + labels75_3[0:6] + ['']
-    scale_50 = scale1.loc[5][2:] *.5
+    scale_50 = scale1.loc[7][2:] *.5
     labels50_3 = [f"{num:.1f}" for num in scale_50] 
     item1 = labels50_3[0]
     labels50_3.reverse()
     labels50_3 = [item1] + labels50_3[0:6] + ['']
-    scale_25 = scale1.loc[5][2:] *.25
+    scale_25 = scale1.loc[7][2:] *.25
     labels25_3 = [f"{num:.1f}" for num in scale_25] 
     item1 = labels25_3[0]
     labels25_3.reverse()
@@ -197,17 +231,17 @@ def main():
 
     # Victor  # Edison
 
-    scale_75 = scale1.loc[4][2:] *.75
+    scale_75 = scale1.loc[6][2:] *.75
     labels75_4 = [f"{num:.1f}" for num in scale_75]
     item1 = labels75_4[0]
     labels75_4.reverse()
     labels75_4 = [item1] + labels75_4[0:6] + ['']
-    scale_50 = scale1.loc[4][2:] *.5
+    scale_50 = scale1.loc[6][2:] *.5
     labels50_4 = [f"{num:.1f}" for num in scale_50] 
     item1 = labels50_4[0]
     labels50_4.reverse()
     labels50_4 = [item1] + labels50_4[0:6] + ['']
-    scale_25 = scale1.loc[4][2:] *.25
+    scale_25 = scale1.loc[6][2:] *.25
     labels25_4 = [f"{num:.1f}" for num in scale_25] 
     item1 = labels25_4[0]
     labels25_4.reverse()
@@ -248,11 +282,42 @@ def main():
     labels25_6.reverse()
     labels25_6 = [item1] + labels25_6[0:6] + ['']
 
-    # Ferran
-
+    # Ferran 
+    scale_75 = scale1.loc[5][2:] *.75
+    labels75_7 = [f"{num:.2f}" for num in scale_75]
+    item1 = labels75_7[0]
+    labels75_7.reverse()
+    labels75_7 = [item1] + labels75_7[0:6] + ['']
+    scale_50 = scale1.loc[5][2:] *.5
+    labels50_7 = [f"{num:.1f}" for num in scale_50]
+    item1 = labels50_7[0]
+    labels50_7.reverse()
+    labels50_7 = [item1] + labels50_7[0:6] + ['']
+    scale_25 = scale1.loc[5][2:] *.25
+    labels25_7 = [f"{num:.1f}" for num in scale_25]
+    item1 = labels25_7[0]
+    labels25_7.reverse()
+    labels25_7 = [item1] + labels25_7[0:6] + ['']
+    # Messi
+    scale_75 = scale1.loc[4][2:] *.75
+    labels75_8 = [f"{num:.1f}" for num in scale_75]
+    item1 = labels75_8[0]
+    labels75_8.reverse()
+    labels75_8 = [item1] + labels75_8[0:6] + ['']
+    scale_50 = scale1.loc[4][2:] *.5
+    labels50_8 = [f"{num:.1f}" for num in scale_50]
+    item1 = labels50_8[0]
+    labels50_8.reverse()
+    labels50_8 = [item1] + labels50_8[0:6] + ['']
+    scale_25 = scale1.loc[4][2:] *.25
+    labels25_8 = [f"{num:.1f}" for num in scale_25]
+    item1 = labels25_8[0]
+    labels25_8.reverse()
+    labels25_8 = [item1] + labels25_8[0:6] + ['']
 
     ## x and y
     df_lab = pd.DataFrame(data = {'x_cor' : [x, x75, x50, x25] ,'y_cor' : [ y, y75, y50, y25]})
+    text_g = ['Min', 'Inbatida(%)','PK(%)', 'Goles90', 'Saques(mts)', 'FK','PSxG','']
 
     ## text labels
     df1_lab = pd.DataFrame(data = {'text' : [text, labels75_1,labels50_1,labels25_1]})
@@ -261,6 +326,9 @@ def main():
     df4_lab = pd.DataFrame(data = {'text' : [text, labels75_4,labels50_4,labels25_4]})
     df5_lab = pd.DataFrame(data = {'text' : [text, labels75_5,labels50_5,labels25_5]})
     df6_lab = pd.DataFrame(data = {'text' : [text, labels75_6,labels50_6,labels25_6]})
+    df7_lab = pd.DataFrame(data = {'text' : [text, labels75_7,labels50_7,labels25_7]})
+    df8_lab = pd.DataFrame(data = {'text' : [text, labels75_8,labels50_8,labels25_8]})
+    dfg_lab = pd.DataFrame(data = {'text' : [text_g, labels75_g, labels50_g, labels25_g]})
 
 
 
@@ -271,6 +339,9 @@ def main():
     label_4 = list(df4_lab['text'].values)
     label_5 = list(df5_lab['text'].values)
     label_6 = list(df6_lab['text'].values)
+    label_7 = list(df7_lab['text'].values)
+    label_8 = list(df8_lab['text'].values)
+    label_g = list(dfg_lab['text'].values)
 
     labels_scale = {
         'x':x,
@@ -303,15 +374,26 @@ def main():
         'Victor Osimhen_l' : label_4[1],
         'Victor Osimhen_l1' : label_4[2],
         'Victor Osimhen_l2' : label_4[3],
-        'Edison Cavani_l' : label_4[1],
-        'Edison Cavani_l1' : label_4[2],
-        'Edison Cavani_l2' : label_4[3],
+        'Edinson Cavani_l' : label_4[1],
+        'Edinson Cavani_l1' : label_4[2],
+        'Edinson Cavani_l2' : label_4[3],
         'Kai Havertz_l' : label_5[1],
         'Kai Havertz_l1' : label_5[2],
         'Kai Havertz_l2' : label_5[3],
         'David Alaba_l' : label_6[1],
         'David Alaba_l1' : label_6[2],
-        'David Alaba_l2' : label_6[3]
+        'David Alaba_l2' : label_6[3],
+        'text_g' : label_g[0],
+        'Gianluigi Donnarumma_l' : label_g[1],
+        'Gianluigi Donnarumma_l1' : label_g[2],
+        'Gianluigi Donnarumma_l2' : label_g[3],
+        'Ferrán Torres_l' : label_7[1],
+        'Ferrán Torres_l1' : label_7[2],
+        'Ferrán Torres_l2' : label_7[3],
+        'Lionel Messi_l' : label_8[1],
+        'Lionel Messi_l1' : label_8[2],
+        'Lionel Messi_l2' : label_8[3],
+        'text_def' : label_1[0] 
     }
 
     lines_src = ColumnDataSource(labels_scale)
@@ -352,9 +434,19 @@ def main():
     ### Polygons
     # example factor:
     theta = np.linspace(0, 2*np.pi, metrics, endpoint= False)
-    scale = data[data['Min'] >=.5].groupby(['League','Pos']).max()[['Min','Sh90','KP90','xG','xA','xG90','xA90']].reset_index()
-    df_def = data[data['Min'] >= .5].groupby(['League','Pos']).mean()[['Min','Sh90','KP90','xG','xA','xG90','xA90']].reset_index()   
-    src_ = data.loc[transfers,'2019/2020',:].iloc[[0,1,2,3,4,5,6,8,11]].reset_index()
+    scale = data[data['Min'] >=5.5].groupby(['League','Pos']).max()[['Min','Sh90','KP90','xG','xA','xG90','xA90']].reset_index()
+    df_def = data[data['Min'] >=5.5].groupby(['League','Pos']).mean()[['Min','Sh90','KP90','xG','xA','xG90','xA90']].reset_index()   
+    src_ = data.loc[transfers,'2019/2020',:].iloc[[0,1,2,3,4,5,6,8,11,12,13]].reset_index()
+    
+
+    # Gianluigi
+    
+    prom_g = serie_a[serie_a['90s'] >= 5.5].mean()[['90s','PSxG','FK','AvgLen','GA90','Penales_per', 'CS%']]
+    gianluigi = serie_a[serie_a['Player'] == 'Gianluigi Donnarumma'][['90s','PSxG','FK','AvgLen','GA90','Penales_per', 'CS%']]
+    
+    xtg, ytg = radar_patch(gianluigi, theta, centre, scale_por)
+    xtg1, ytg1 = radar_patch(prom_g, theta, centre, scale_por)
+
     # Jack Grealish
     scale_ = scale.loc[3][2:]
     default_init = df_def.loc[3][2:]
@@ -385,8 +477,8 @@ def main():
     xt7, yt7 = radar_patch(default_init, theta, centre, scale_)
 
     # Houssem
-    scale_ = scale.loc[5][2:]
-    default_init = df_def.loc[5][2:]
+    scale_ = scale.loc[7][2:]
+    default_init = df_def.loc[7][2:]
 
     f1 = src_.loc[3][[4,7,8,9,10,11,12]]
 
@@ -394,8 +486,8 @@ def main():
     xt9, yt9 = radar_patch(default_init, theta, centre, scale_)
     # Victor
 
-    scale_ = scale.loc[4][2:]
-    default_init = df_def.loc[4][2:]
+    scale_ = scale.loc[6][2:]
+    default_init = df_def.loc[6][2:]
 
     f1 = src_.loc[4][[4,7,8,9,10,11,12]]
 
@@ -426,7 +518,22 @@ def main():
     xt17, yt17 = radar_patch(default_init, theta, centre, scale_)
 
     # Ferran
+    scale_ = scale.loc[5][2:]
+    default_init = df_def.loc[5][2:]
 
+    f1 = src_.loc[9][[4,7,8,9,10,11,12]]
+
+    xt18, yt18 = radar_patch(f1, theta, centre, scale_)
+    xt19, yt19 = radar_patch(default_init, theta, centre, scale_)
+
+    # Messi
+    scale_ = scale.loc[4][2:]
+    default_init = df_def.loc[4][2:]
+
+    f1 = src_.loc[10][[4,7,8,9,10,11,12]]
+
+    xt20, yt20 = radar_patch(f1, theta, centre, scale_)
+    xt21, yt21 = radar_patch(default_init, theta, centre, scale_)
 
 
     df = pd.DataFrame(data = {'x_cor' : [xt.values,xt1.values] ,'y_cor' : [yt.values, yt1.values]})
@@ -438,6 +545,9 @@ def main():
     df6 = pd.DataFrame(data = {'x_cor' : [xt12.values,xt13.values] ,'y_cor' : [yt12.values, yt13.values]})
     df7 = pd.DataFrame(data = {'x_cor' : [xt14.values,xt15.values] ,'y_cor' : [yt14.values, yt15.values]})
     df8 = pd.DataFrame(data = {'x_cor' : [xt16.values,xt17.values] ,'y_cor' : [yt16.values, yt17.values]})
+    df9 = pd.DataFrame(data = {'x_cor' : [xt18.values,xt19.values] ,'y_cor' : [yt18.values, yt19.values]})
+    df10 = pd.DataFrame(data = {'x_cor' : [xt20.values,xt21.values] ,'y_cor' : [yt20.values, yt21.values]})
+    dfg = pd.DataFrame(data = {'x_cor' : [xtg.values[0], xtg1.values], 'y_cor' : [ytg.values[0], ytg1.values]})
 
     patch_xy = (list(df['x_cor'].values), list(df['y_cor']))
     patch_xy1 = (list(df1['x_cor'].values), list(df1['y_cor']))
@@ -448,6 +558,9 @@ def main():
     patch_xy6 = (list(df6['x_cor'].values), list(df6['y_cor']))
     patch_xy7 = (list(df7['x_cor'].values), list(df7['y_cor']))
     patch_xy8 = (list(df8['x_cor'].values), list(df8['y_cor']))
+    patch_xy9 = (list(df9['x_cor'].values), list(df9['y_cor']))
+    patch_xy10 = (list(df10['x_cor'].values), list(df10['y_cor']))
+    patch_g = (list(dfg['x_cor']), list(dfg['y_cor']))
 
     data_source = {
         'x':patch_xy[0],
@@ -465,32 +578,39 @@ def main():
         'Houssem Aouar_y' : patch_xy4[1],
         'Victor Osimhen_x' : patch_xy5[0],
         'Victor Osimhen_y' : patch_xy5[1],
-        'Edison Cavani_x' : patch_xy6[0],
-        'Edison Cavani_y' : patch_xy6[1],
+        'Edinson Cavani_x' : patch_xy6[0],
+        'Edinson Cavani_y' : patch_xy6[1],
         'Kai Havertz_x' : patch_xy7[0],
         'Kai Havertz_y' : patch_xy7[1],
         'David Alaba_x' : patch_xy8[0],
-        'David Alaba_y' : patch_xy8[1]
+        'David Alaba_y' : patch_xy8[1],
+        'Gianluigi Donnarumma_x' : patch_g[0],
+        'Gianluigi Donnarumma_y' : patch_g[1],
+        'Ferrán Torres_x' : patch_xy9[0],
+        'Ferrán Torres_y' : patch_xy9[1],
+        'Lionel Messi_x' : patch_xy10[0],
+        'Lionel Messi_y' : patch_xy10[1]
     }
 
 
     opts = {
-    'Bundesliga' : ['Kai Havertz', 'David Alaba'],
-    'Ligue 1' : ['Edison Cavani', 'Houssem Aouar', 'Victor Osimhen'],
-    'EPL' : ['Jack Grealish', 'Ismaila Sarr', 'Adama Traoré', "Raúl Jiménez"],
-    "Seria A" : ['Gianluigi Donnaruma']
+    'Bundesliga' : ['Seleccionar...','Kai Havertz', 'David Alaba'],
+    'Ligue 1' : ['Seleccionar...','Edinson Cavani', 'Houssem Aouar', 'Victor Osimhen'],
+    'La Liga' : ['Seleccionar...', 'Ferrán Torres', 'Lionel Messi'],
+    'Premier League' : ['Seleccionar...','Jack Grealish', 'Ismaila Sarr', 'Adama Traoré', "Raúl Jiménez"],
+    'Serie A' : ['Seleccionar...','Gianluigi Donnarumma']
     }
 
     source = ColumnDataSource(data_source)
 
     #########
 
-    file = 'Draft.csv'
+    file = 'FinalTweets.csv'
     tweet_data = pd.read_csv(file)
     tweet_data = tweet_data[['created_at',
        'player', 'sentiment', 'country']]
 
-    tweet_data = tweet_data[tweet_data['player'] != 'Ferran']
+    ##tweet_data = tweet_data[tweet_data['player'] != 'Ferran']
 
     from datetime import datetime, date, timedelta
 
@@ -524,13 +644,41 @@ def main():
         pal = [dic[str(ceil(y))] for y in yr]
         return xr, yr, pal
 
+    def tweet_date_count_b(df, player, dic):
+        tweets = df[df['player'] == player]
+        tweets = tweets.set_index(pd.DatetimeIndex(tweets['created_at'])).drop('created_at', axis= 1).sort_index()
+        tweets_sum = tweets['sentiment'].resample('1D').sum()
+        tweets_count = tweets['sentiment'].resample('1D').count()
+        tweets_count = tweets_count.replace(0,np.nan)
+        tweets_proportion = tweets_sum / tweets_count
+        tweets_proportion = tweets_proportion.fillna(0)
+    
+        xr = tweets_proportion.sort_index(ascending = True).index
+        xr = [datetime.strftime(i, fmt) for i in xr]
+        yr = tweets_proportion.sort_index(ascending = True).values
+        pal = [dic[str(ceil(y))] for y in yr]
+        if player == 'Lionel':
+            return xr[1:-1], yr[1:-1], pal[1:-1]
+        if player == 'Ferran':
+            pre = [0,0]
+            yr = list(yr)
+            yr.append(0)
+            for i in yr:
+             pre.append(i)
+            pre.append(0)
+            return ['July-12', 'July-13'] + xr + ['July-17', 'July-18'], np.array(pre) , ['#67a9cf','#67a9cf'] + pal + ['#67a9cf','#67a9cf']
+
     values = []    
-    players_ = ['Jack', 'Adama', 'Ismaila', 'Raul', 'Houssem', 'Victor', 'Edison', 'Kai', 'David']
+    players_ = ['Jack', 'Adama', 'Ismaila', 'Raul', 'Houssem', 'Victor', 'Edison', 'Kai', 'David', 'Gianluigi']
+    players_b = ['Ferran', 'Lionel']
     ##
     # Jack Grealish
 
     for player in players_:
         values.append(tweet_date_count(tweet_data,player, color_dic))
+    
+    for player in players_b:
+        values.append(tweet_date_count_b(tweet_data, player, color_dic))
 
     data_src = {
         'x':values[0][0],
@@ -548,12 +696,21 @@ def main():
         'Houssem Aouar_c' : values[4][2],
         'Victor Osimhen_y' : values[5][1],
         'Victor Osimhen_c' : values[5][2],
-        'Edison Cavani_y' : values[6][1],
-        'Edison Cavani_c' : values[6][2],
+        'Edinson Cavani_y' : values[6][1],
+        'Edinson Cavani_c' : values[6][2],
         'Kai Havertz_y' : values[7][1],
         'Kai Havertz_c' : values[7][2],
         'David Alaba_y' : values[8][1],
-        'David Alaba_c' : values[8][2]
+        'David Alaba_c' : values[8][2],
+        'Gianluigi Donnarumma_y' : values[9][1],
+        'Gianluigi Donnarumma_c' : values[9][2],
+        'Ferrán Torres_y' : values[10][1],
+        'Ferrán Torres_c' : values[10][2],
+        'Lionel Messi_y' : values[11][1],
+        'Lionel Messi_c' : values[11][2],
+        'Ferrán Torres' : values[10][0],
+        'Lionel Messi' : values[11][0],
+        'default' : values[0][0]
     }
 
     ##Ferran
@@ -601,8 +758,8 @@ def main():
 
     map4 = pd.get_dummies(map4, columns = ['country'], prefix = '', prefix_sep = '')
     map4 = map4.groupby('player', as_index = False).sum()
-
-    map4 = map4.set_index('player').reindex(players_).reset_index()
+    all_play = players_ + players_b
+    map4 = map4.set_index('player').reindex(all_play).reset_index()
 
     country = df3_plot.country
     diff = country[~country.isin(map4.columns)].values
@@ -611,8 +768,8 @@ def main():
 
     ##Jack
     dfs_plot = pd.DataFrame()
-
-    for i, j in enumerate(players_):
+    
+    for i, j in enumerate(all_play):
         temp = df3_plot.copy()
         temp = pd.merge(temp, pd.DataFrame(map4.iloc[i,1:].reset_index()), left_on = 'country', right_on = 'index').drop('index', axis = 1)
         temp.columns = ['country', 'xs','ys','count']
@@ -630,16 +787,22 @@ def main():
         'Raúl Jiménez' : dfs_plot[dfs_plot['player'] == 'Raul']['count'].values,
         'Houssem Aouar' : dfs_plot[dfs_plot['player'] == 'Houssem']['count'].values,
         'Victor Osimhen' : dfs_plot[dfs_plot['player'] == 'Victor']['count'].values,
-        'Edison Cavani' : dfs_plot[dfs_plot['player'] == 'Edison']['count'].values,
+        'Edinson Cavani' : dfs_plot[dfs_plot['player'] == 'Edison']['count'].values,
         'Kai Havertz' : dfs_plot[dfs_plot['player'] == 'Kai']['count'].values,
-        'David Alaba' : dfs_plot[dfs_plot['player'] == 'David']['count'].values
+        'David Alaba' : dfs_plot[dfs_plot['player'] == 'David']['count'].values,
+        'Gianluigi Donnarumma' : dfs_plot[dfs_plot['player'] =='Gianluigi']['count'].values,
+        'Ferrán Torres' : dfs_plot[dfs_plot['player'] =='Ferran']['count'].values,
+        'Lionel Messi' : dfs_plot[dfs_plot['player'] =='Lionel']['count'].values
     }
 
     s3 = ColumnDataSource(data_plot)
 
     ### xG, xA Delta
 
-    delta = data.loc[(transfers, '2019/2020') , ['deltaXG', 'deltaXA']].iloc[[0,1,2,3,4,5,6,8,11]].reset_index().drop('Season', axis = 1)
+    delta = data.loc[(transfers, '2019/2020') , ['deltaXG', 'deltaXA']].iloc[[0,1,2,3,4,5,6,8,11,12,13]].reset_index().drop('Season', axis = 1)
+
+    #Gianluigi 
+    delta_g = serie_a[serie_a['Player'] == 'Gianluigi Donnarumma'][['PSxG+/-', '/90']] * -1
 
     line_colo = []
     for i in delta.index:
@@ -664,22 +827,30 @@ def main():
         'Houssem Aouar_x' : line_colo[3],
         'Victor Osimhen' : list(delta.iloc[4,1:].values),
         'Victor Osimhen_x' : line_colo[4],
-        'Edison Cavani' :list(delta.iloc[5,1:].values),
-        'Edison Cavani_x': line_colo[5],
+        'Edinson Cavani' :list(delta.iloc[5,1:].values),
+        'Edinson Cavani_x': line_colo[5],
         'Kai Havertz' : list(delta.iloc[8,1:].values),
         'Kai Havertz_x' : line_colo[8],
         'David Alaba' : list(delta.iloc[0,1:].values),
-        'David Alaba_x' : line_colo[0]
+        'David Alaba_x' : line_colo[0],
+        'Ferrán Torres' : list(delta.iloc[9,1:].values),
+        'Ferrán Torres_x' : line_colo[9],
+        'Lionel Messi' : list(delta.iloc[10,1:].values),
+        'Lionel Messi_x' : line_colo[10],
+        'Gianluigi Donnarumma' : [delta_g.loc[11,'PSxG+/-'], delta_g.loc[11,'/90']],
+        'Gianluigi Donnarumma_x' : ['green', 'green'],
+        'factors_g' : ["Goles - PSxG", "G90 - PSxG90"],
+        'factors_def' : ["xG - G", "xA - A"]
     }
 
     src_del = ColumnDataSource(src_delta)
 
-
-    dot = figure(plot_width=720, plot_height=220, title = 'BALANCE DE GOLES & ASISTENCIAS DEL JUGADOR', toolbar_location = None, x_range = [-2.2,3], y_range = src_delta['factors'])
+    dot = figure(plot_width=720, plot_height=220, title = 'BALANCE DE VALORES ESPERADOS', toolbar_location = None, x_range = [-5,5.5], y_range = src_del.data['factors'])
 
     dot.segment('x0', 'factors', 'x', 'factors', line_color = 'colo', line_width = 4, source = src_del)
 
     dot.circle(x = 'x', y =  'factors', size = 'size', fill_color = 'orange', line_width = 3, line_color = 'colo', source = src_del)
+
 
     ###p1
     rendered = p.patches('x', 'y', source = source, fill_color='color', fill_alpha=0.45)
@@ -692,7 +863,6 @@ def main():
 
     ###p2
     rendered1 = p1.vbar(x='x', top='y', width=.7,source=data_src, fill_alpha = .6, fill_color = 'color')
-    ##option = p1.line('index', 'defects', line_width=2, color='red', source=fill_source)
 
     ###p3
     colorsrev = tuple(reversed(Blues8))
@@ -708,7 +878,7 @@ def main():
 
 
     callback = CustomJS(args=dict(source=source,plot=p, rendered = rendered, rendered1 = rendered1, src = data_src,
-                    xrange=p1.x_range, p2=p2, s_data = s3, l_src = lines_src, delta_src = src_del), code="""  
+                    xrange=p1.x_range, p2=p2, s_data = s3, l_src = lines_src, delta_src = src_del, factors = dot.y_range), code="""  
         var comp = cb_obj.value;
         var data = source.data;
         var keyx = String(comp)+'_x';
@@ -723,6 +893,11 @@ def main():
         data0['text2'] = data0[String(keyl1)]
         data0['text3'] = data0[String(keyl2)]
         l_src.change.emit();
+        if (String(comp) == 'Gianluigi Donnarumma'){
+            data0['text'] = data0['text_g']}
+        else{
+            data0['text'] = data0['text_def']}
+        l_src.change.emit();
 
         data['x'][0] = data[String(keyx)][0]
         data['x'][1] =data[String(keyx)][1]
@@ -735,7 +910,19 @@ def main():
         data1['y'] = data1[String(keyy1)]
         data1['color'] = data1[String(keyc)]
         src.change.emit();  
-        xrange.factors = data1['x'];
+        if (String(comp) == 'Lionel Messi'){
+            xrange.factors = data1['Lionel Messi']
+            data1['x'] = data1['Lionel Messi']
+        }
+        else {
+            if (String(comp)== 'Ferrán Torres'){
+            xrange.factors = data1['Ferrán Torres']
+            data1['x'] = data1['Ferrán Torres']
+        }
+           else{
+            xrange.factors = data1['default']
+            data1['x'] = data1['default']}
+        }
         src.change.emit();
 
         var data2 = s_data.data;
@@ -747,27 +934,31 @@ def main():
         var keycolo = String(comp)+'_x';
         datax['colo'] = datax[String(keycolo)]
         datax['x'] = datax[comp]
+        if (String(comp) == 'Gianluigi Donnarumma'){
+            factors.factors = datax['factors_g']
+            datax['factors'] = datax['factors_g']
+        }
+        else {
+            factors.factors = datax['factors_def']
+            datax['factors'] = datax['factors_def']
+        }
         delta_src.change.emit();
     """ 
     )
 
-    callback2 = CustomJS(args=dict(p3=p2), code='''
-        p3.reset.emit();
-    ''')
+    players_all = ['Seleccionar...'] + transfers + ['Gianluigi Donnarumma']
+    select1 = Select(title = 'League', options = ['Bundesliga', 'La Liga', 'Premier League', 'Ligue 1', 'Serie A'], value = 'Premier League')
 
-    select1 = Select(title = 'League', options = ['EPL', 'Bundesliga','Ligue 1', 'Serie A'], value = 'EPL')
-
-    select2 = Select(title = 'Player', options = transfers, value = 'Jack Grealish')
-
-    select2.js_on_change('value', callback)
+    select2 = Select(title = 'Player', options = players_all, value = 'Seleccionar...')
 
     select1.js_on_change('value', CustomJS(args=dict(select2=select2), code="""
         const opts = %s
         select2.options = opts[cb_obj.value]
     """ % opts))
 
-    button = Button(label='Reset map view')
-    button.js_on_click(callback2)
+    select2.js_on_change('value', callback)
+
+   
 
     p.axis.visible = False
     p.grid.grid_line_color = None
@@ -796,16 +987,72 @@ def main():
     El azul muestra las estadíticas del jugador.""",
     width=910, height=25)
     textb = Paragraph(text="""
-    Min=  Minutos/1000 ----- SH90=  Tiros por 90 min ----- KP90 = Pases claves por 90 min ----- xG, xA, xG90, xA90 = Valores esperados""", 
+    Min=  Minutos/90 ----- SH90=  Tiros por 90 min ----- KP90 = Pases claves por 90 min ----- xG, xA, xG90, xA90 = Valores esperados""", 
     width = 1000, height = 50)
     text1 = Paragraph(text = """ Se muestra un valor deseado si la diferencia es negativa, entre el valor esperado y las asistencias o goles realizados en la temporada 19/20.
     """,width=1000, height=90)
     text2 = Paragraph(text = """
     """,width=200, height=50)
-    text3 = Paragraph(text = """ Se puede pulsar el país para conocer el número de tweets provenientes de aquel país.
+    text3 = Paragraph(text = """ Se puede pulsar el país para conocer la magnitud de tweets.
     """,width=800, height=50)
     st.bokeh_chart(column(widget, p, text, textb, dot, text1, p1, text2, p2, text3))
+    st.header('Valoraciones')
+    ana1 = Paragraph(text="""
+    De por sí algunos de los datos ya hablan por si solos. Nos apoyan en nuestras creencias acerca de estos jugadores o cuestionan y terminan ayudándonos a reformular nuestras opiniones.
+    Por ejemplo, se puede decir que Jack Grealish, Ferran Torres, Adama Traoré o Kai Havertz son jugadores que están rindiendo a gran nivel dentro de sus ligas y al mismo tiempo son demandados por los aficionados.
+    Con las métricas, estádisticas y los datos recolectados se puede analizar y poner en uso estos para crear una evaluación de sus valoraciones en el mercado. Para esto utilizamos un sistema de valoración ponderado y poder asignar a cada jugador una categoría dentro de un sistema de recomendación en base a 5 estrellas.
+    Los factores a evaluar serán: nivel de juego sobre el promedio de la liga, balance de los valores esperados, el nivel de la liga donde jugo la última temporada el jugador, estimación por parte de los fans según el "sentiment value" de los tweets, el nivel del equipo donde compitío el jugador en la última temporada y el sistema por último considera la edad del jugador.
+    Cada factor tiene un peso diferente en sistema de recomendación que se describe en este cuadro.
+    """,
+    width=910, height=170)
+    st.bokeh_chart(ana1)
+    ###tablaponde
+    contenido = {'Categorías': ['Nivel de juego', 'Balance de valores esperados', 'Nivel de la liga', 'Estimación por fans',  'Nivel del club', 'Edad'], 
+                 'Descripción': ['Se considera el número de métricas del jugador que están por encima del promedio.', 'Se toma en cuenta la diferencia en los balances si es deseada y la magnitud. (xG - Goles y xA - Asistencias)', 'De escala 1-10 se evalua el nivel de la liga donde el jugador jugo la última temporada.', 'El sentiment value de los tweets sobre el jugador (promedio por día).', "De escala 1-10 se evalua el nivel del club donde el jugador jugo la última temporada.", "La edad del jugador." ],
+                 "Valores": ['45%', '30%', "10%", "5%", "5%", "5%"]}
+    factores = pd.DataFrame(contenido)
+    st.table(factores)
+
+    ana2 = Div(text="""
+    <b>El sistema de ponderación tiene el objetivo de estimar la valoración del jugador y darnos a conocer si un jugador está sobrevalorado, está con una apreciación justa, ó su valor de mercado está subestimado. 
+    Los valores de mercado serán estimados según el sistema de recomendación de 5 estrellas que se detalla a continuación.</b>
+    """,
+    width=910, height=90)
+    
+    st.bokeh_chart(ana2)
+     ###tablaestrellas
+    recomendaciones = {'Recomendación': ['5', '4.5', '4', '3.5', '3', '2.5'],
+                       'Valor en millones (€)' : [' > 125 ', '90 - 125', '60 - 89', '40 - 59', '20  - 39', '< 20']}
+    estrellas = pd.DataFrame(recomendaciones)
+    st.table(estrellas)
+   
+    st.header('Resultados') 
+
+    ana3 = Paragraph(text="""
+    Con estas condiciones podemos evaluar a los jugadores de forma objetiva y dentro de un mismo marco de evaluación. Los resultados del sistema de ponderación se encuentran en la columna "Recomendación" y "Valor aprox en millones".
+    """,
+    width=910, height=80)
+    st.bokeh_chart(ana3)
+    ###tablarecomendaciones
+
+    contenido = {'Jugador': ['Jack Grealish', 'Adama Traoré', 'Ismaila Sarr', 'Raul Jimenez', 'Houssem Aouar', 'Victor Osimhen', 'Edison Cavani', 'Kai Havertz', 'David Alaba', 'Ferran Torres', 'Lionel Messi', 'Gianluigi Donnarumma'],
+                 "Edad" : ['24', '24', '22', '29', '22', '21', '33', '21', '28', '20', '33', '21'],
+                 "Equipo (ultima temporada)" : ['Aston Villa', 'Wolverhampton', 'Watford', 'Wolverhampton', 'Olympique Lyonnais', 'Napoli', 'Free', 'Chelsea', 'Bayern Munich', 'Manchester City', 'Barcelona', ' AC Milan'],
+                 "Valor aprox en millones (€)": ['40', '35', '24.5', '40', '49.5', '70', '20', '80', '65', '27', '112', '60'],
+                 "Recomendación" : ['3.5', '3', '2.5','3.5','3','3','2.5','4.5','3','3','5','4.5'],
+                 "Valor estimado (sistema de recomendación)":["40-59 millones", "20-39 millones", " 20 millones > ", "40-59 millones", "20-39 millones", "20-39 millones", " 20 millones > ", "90-124 millones", "20-39 millones","20-39 millones"," 125 millones < ", "90-124 millones"],
+                 "Estado" : ['valor justo', 'valor justo', "sobrevalorado", "valor justo", "sobrevalorado", "sobrevalorado", "sobrevalorado", "subestimado", "sobrevalorado", "valor justo", "subestimado", "subestimado"]}
+    
+    recomendacion = pd.DataFrame(contenido)
+
+    st.table(recomendacion)
 
 if __name__ == '__main__':
     main()
 
+### Add Ferran, add Messi, add Gianluigi
+### Transfer values text
+
+
+
+ 
