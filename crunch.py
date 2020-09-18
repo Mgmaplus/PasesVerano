@@ -566,6 +566,7 @@ def main():
         'x':patch_xy[0],
         'y':patch_xy[1],
         'color': ['blue', 'purple'],
+        'label': ['Jugador', 'Liga (Promedio)'],
         'Jack Grealish_x' : patch_xy[0],
         'Jack Grealish_y' : patch_xy[1],
         'Adama Traoré_x' : patch_xy1[0],
@@ -845,7 +846,7 @@ def main():
 
     src_del = ColumnDataSource(src_delta)
 
-    dot = figure(plot_width=720, plot_height=220, title = 'BALANCE DE VALORES ESPERADOS', toolbar_location = None, x_range = [-5,5.5], y_range = src_del.data['factors'])
+    dot = figure(plot_width=630, plot_height=220, title = 'BALANCE DE VALORES ESPERADOS', toolbar_location = None, x_range = [-5,5.5], y_range = src_del.data['factors'])
 
     dot.segment('x0', 'factors', 'x', 'factors', line_color = 'colo', line_width = 4, source = src_del)
 
@@ -853,7 +854,9 @@ def main():
 
 
     ###p1
-    rendered = p.patches('x', 'y', source = source, fill_color='color', fill_alpha=0.45)
+    rendered = p.patches('x', 'y', source = source, fill_color='color', legend = 'label', fill_alpha=0.45)
+
+    p.legend.location = "bottom_right"
 
     xdr = FactorRange(factors=data_src.data['x'])
     ydr = Range1d(start = -.3, end = 1)
@@ -870,7 +873,7 @@ def main():
 
     # Create the Figure object "p2"
 
-    p2 = figure(plot_width= 810, plot_height=400, title = 'LOS TWEETS SOBRE EL JUGADOR POR PAIS',
+    p2 = figure(plot_width= 630, plot_height=400, title = 'LOS TWEETS SOBRE EL JUGADOR POR PAIS',
             toolbar_location=None, tools=['hover', 'pan'], tooltips='@country: @count')
 
     p2.multi_polygons(xs='xs', ys='ys', fill_color=cmap , source=s3)
@@ -981,36 +984,33 @@ def main():
 
     widget = row(select1,select2)
     
-    st.title('Evaluación de fichajes de Verano en las principales Ligas de Europa: Traspasos y Rumores 2020')
-    st.header('Contrastando con el promedio')  
-    text = Paragraph(text="""El polígono de color rosa es el promedio de liga de acuerdo a la posición. Se considera jugadores con +500 min.
-    El polígono azul muestra las estadíticas del jugador.""",
-    width=710, height=35)
+    st.title('Evaluación de fichajes de Verano en las principales Ligas de Europa: Traspasos y Rumores 2020')  
+    
+    text = Paragraph(text="""Fig 1. El promedio es de acuerdo a la posición. Se consideran jugadores con +500 min.""",
+    width=710, height=15)
     textb = Paragraph(text="""
-    Min =  Minutos/90 ----- SH90=  Tiros / 90 ----- KP90 = Pases claves / 90 ----- xG, xA, xG90, xA90 = Valores esperados""", 
-    width = 1000, height = 20)
+    (Min =  Minutos/90 ----- SH90=  Tiros / 90 ----- KP90 = Pases claves / 90 ----- xG, xA, xG90, xA90 = Valores esperados""", 
+    width = 1000, height = 15)
     textc = Paragraph(text="""
     PSxG = Post tiros xG (arquero) ----- FK = Goles recibidos de tiro libre ----- Saques = Distancia de saque promedio""", 
-    width = 1000, height = 20)
+    width = 1000, height = 15)
     textd = Paragraph(text="""
-    Goles90 = Goles recibidos / 90 ----- PK(%) = Penales parados % ----- Inbatidas(%) = Porterías inbatidas % """, 
+    Goles90 = Goles recibidos / 90 ----- PK(%) = Penales parados % ----- Inbatidas(%) = Porterías inbatidas %)""", 
     width = 1000, height = 45)
-    text1 = Paragraph(text = """ Se muestra un valor deseado si la diferencia es negativa, entre el valor esperado y las asistencias o goles realizados en la temporada 19/20.
+    text1 = Paragraph(text = """Fig 2. Se muestra un valor deseado si la diferencia es negativa, entre el valor esperado y las asistencias o goles realizados en la temporada 19/20.
     """,width=1000, height=30)
     text2 = Paragraph(text = """
     """,width=200, height=15)
-    text3 = Paragraph(text = """ Se puede pulsar el país para conocer la magnitud de tweets.
+    text3 = Paragraph(text = """ Fig 4. Se puede pulsar el país para conocer la magnitud de tweets.
     """,width=800, height=35)
     st.bokeh_chart(column(widget, p, text, textb, textc, textd, dot, text1, p1, text2, p2, text3))
     st.header('Valoraciones')
     ana1 = Div(text="""
-    De por sí algunos de los datos ya hablan por si solos. Nos apoyan en nuestras creencias acerca de estos jugadores o cuestionan y terminan ayudándonos a reformular nuestras opiniones.
-    Por ejemplo, se puede decir que Jack Grealish, Ferrán Torres, Adama Traoré o Kai Havertz son jugadores que están rindiendo a gran nivel dentro de sus ligas y al mismo tiempo son demandados por los aficionados.
     Con las métricas, estádisticas y los datos recolectados se puede analizar y poner en uso estos para crear una evaluación de sus valoraciones en el mercado. <b> Para esto utilizamos un sistema de valoración ponderado y poder asignar a cada jugador una categoría dentro de un sistema de recomendación.</b>
-    Los factores a evaluar serán: nivel de juego sobre el promedio de la liga, balance de los valores esperados, el nivel de la liga donde jugo la última temporada el jugador, estimación por parte de los fans según el "sentiment value" de los tweets, el nivel del equipo donde compitío el jugador en la última temporada y el sistema por último considera la edad del jugador.
-    Cada factor es ponderado y representa un peso diferente que se describe en este cuadro.
+    Los factores a evaluar serán: nivel de juego sobre el promedio de la liga, balance de los valores esperados, el nivel de la liga donde jugó la última temporada el jugador, estimación por parte de los fans según el "sentiment value" de los tweets, el nivel del equipo donde con el cual compitió el jugador en la última temporada y el sistema por último considera la edad del jugador.
+    Cada factor es ponderado y representa un peso diferente que se describe en el siguiente cuadro.
     """,
-    width=650, height=210)
+    width= 700, height=160)
     st.bokeh_chart(ana1)
     ###tablaponde
     contenido = {'Categorías': ['Nivel de juego', 'Balance de valores esperados', 'Nivel de la liga', 'Estimación por fans',  'Nivel del club', 'Edad'], 
@@ -1020,10 +1020,10 @@ def main():
     st.table(factores)
 
     ana2 = Div(text="""
-    El sistema de ponderación tiene <b> el objetivo de estimar la valoración del jugador y darnos a conocer si un jugador está sobrevalorado, está con una apreciación justa, ó su valor de mercado está subestimado.</b>
+       El sistema de ponderación tiene <b> el objetivo de estimar la valoración del jugador y darnos a conocer si un jugador está sobrevalorado, está con una apreciación justa, ó su valor de mercado está subestimado.</b>
     Los valores de mercado serán estimados según el sistema de recomendación que se detalla a continuación.
     """,
-    width=630, height=90)
+    width=700, height=90)
     
     st.bokeh_chart(ana2)
      ###tablaestrellas
@@ -1035,18 +1035,18 @@ def main():
     st.header('Resultados') 
 
     ana3 = Paragraph(text="""
-    Los resultados del sistema de ponderación se encuentran en la columna "Clase asignada" y "Valor aprox en millones".
+       Los resultados del sistema de ponderación se encuentran en la columna "Clase asignada" y "Valor estimado".
     """,
-    width=670, height=80)
+    width=700, height=40)
     st.bokeh_chart(ana3)
     ###tablarecomendaciones
 
     contenido = {'Jugador': ['Jack Grealish', 'Adama Traoré', 'Ismaila Sarr', 'Raúl Jiménez', 'Houssem Aouar', 'Victor Osimhen', 'Edison Cavani', 'Kai Havertz', 'David Alaba', 'Ferrán Torres', 'Lionel Messi', 'Gianluigi Donnarumma'],
                  "Edad" : ['24', '24', '22', '29', '22', '21', '33', '21', '28', '20', '33', '21'],
                  "Equipo (2020/2021)" : ['Aston Villa', 'Wolverhampton', 'Watford F.C.', 'Wolverhampton', 'Olympique Lyonnais', 'SSC Napoli', 'Free', 'Chelsea F.C.', 'Bayern Munich', 'Manchester City', 'Barcelona', ' AC Milan'],
-                 "Valor aprox en millones (€)": ['40', '35', '24.5', '40', '49.5', '70', '20', '80', '65', '27', '112', '60'],
+                 "Valor aprox (millones €)": ['40', '35', '24.5', '40', '49.5', '70', '20', '80', '65', '27', '112', '60'],
                  "Clase asignada" : ['3.5', '3', '2.5','3.5','3','3','2.5','4.5','3','3','5','4.5'],
-                 "Valor estimado (sistema de recomendación)":["40-59 millones", "20-39 millones", " 20 millones > ", "40-59 millones", "20-39 millones", "20-39 millones", " 20 millones > ", "90-124 millones", "20-39 millones","20-39 millones"," 125 millones < ", "90-124 millones"],
+                 "Valor estimado":["40-59 millones", "20-39 millones", " 20 millones > ", "40-59 millones", "20-39 millones", "20-39 millones", " 20 millones > ", "90-124 millones", "20-39 millones","20-39 millones"," 125 millones < ", "90-124 millones"],
                  "Estado" : ['Valor justo', 'Valor justo', "Sobrevalorado", "Valor justo", "Sobrevalorado", "Sobrevalorado", "Sobrevalorado", "Subestimado", "Sobrevalorado", "Valor justo", "Subestimado", "Subestimado"]}
     
     recomendacion = pd.DataFrame(contenido)
@@ -1054,19 +1054,25 @@ def main():
     st.table(recomendacion)
 
     ana4 = Div(text="""
-
-    En conclusión, con este análisis <b> se muestra como los fichajes de verano se pueden evaluar y llevar a la mesa de deciones, más inteligencia en el caso de tener que negociar un precio. </b> Un poco más del 40% de los posibles o completados fichajes del verano que observamos están sobrevalorados lo que puede ser una indicación de que los precios de mercado estaban en su pico.
+       En conclusión, con este análisis <b> se muestra como los fichajes de verano se pueden evaluar y a través de un sistema de ponderación llevar más inteligencia a la mesa de deciones en el caso de tener que negociar un precio. </b> Un poco más del 40% de los posibles o completados fichajes del verano que observamos están sobrevalorados lo que puede ser una indicación de que los precios de mercado estaban en su pico.
     Es posible que jugadores fueron causa de rumores de traspaso previo a la pandemia que terminó condicionando a los clubes llevándolos a reconsiderar su oferta para negociar con un mayor poder de negociación en futuras ventanas de traspasos.
     Podemos ver en el caso particular de Victor Osimhen donde su transferencia incluso ha sido la cifra record del Napoli, como una indicación de que <b> el mercado mantuvo su característica de mediar valores pico con alta competencia o demanda para un grupo selectivo de jugadores.</b>
     Siendo la muestra seleccionada para este análisis también selectiva donde el objetivo es evaluar en base a varios factores incluyendo los tweets sobre los jugadores,
     <b> se debe tomar en cuenta el rendimiento del mercado de fichajes fuera de este contexto para sacar mejores conclusiones.</b> Vemos al mercado de traspasos reducido y con varias de sus posibles transferencias pasar a ser solo rumores. 
-    En este análisis 3 de cada 4 jugadores no han llegado a ser traspasados y la transferencias de solo 1 de los 3 jugadores "subestimados" y de solo 1 de los 4 jugadores con "precio justo" han sido completadas.
+    En este análisis 3 de cada 4 jugadores no han llegado a ser traspasados y solo uno de los tres jugadores "subestimados" y uno de los cuatro jugadores con "precio justo" han sido fichados.
     Como observación sobre el 'sentiment value' de los tweets, se conoce que estos por lo general tienen un valor neutral, donde 4.393 de los 6.042 tweets observados o 73% de los tweets obtuiveron un valor de 0 (neutral) y no tienen una magnitud o impacto significante durante el mercado de traspasos. Puede ser un mejor uso el 'sentiment value' al analizar su magnitud en casos o acciones individuales donde la recolección de tweets sea de corta duración.
 
     """,
-    width=670, height=215)
+    width=670, height=415)
+
+    realizado = Div(text = """<i>Realizado para: <a href="https://twitter.com/marca">@Marca</a> en colaboración con <a href="https://twitter.com/SportsDataCamp">@SportsDataCamp</a>.</i>""",width=700, height=20)
+    autor = Div(text = """<i> Daniel Andrade Tamayo </i>""",width=500, height=20)
+    contacto = Div(text="""Conectemos <a href="https://twitter.com/dratUIO">@dratUIO</a>.""", width=670, height=30)
+    
     st.bokeh_chart(ana4)
-   
+    st.bokeh_chart(realizado)
+    st.bokeh_chart(autor)
+    st.bokeh_chart(contacto)
 
 
 
